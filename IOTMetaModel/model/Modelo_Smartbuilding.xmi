@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iOTMetaModel:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iOTMetaModel="http://www.example.org/iOTMetaModel">
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Presence"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      publish_on_topic="//@node.0/@create_topic.0"
+      edge_node="//@node.4 //@node.8">
+    <create_topic
+        name="Presence"
+        data="//@data.0"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepPresence">
+      <rule
+          apply_to="//@node.0/@create_topic.0"
+          eventType="EventPresence"
+          rule="select value from EsperClient.EventPresence where value = 1">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RulePresence"
+            message="Presence detected!"
+            publish_on_topic="//@node.0/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Brightness"
+      id="1"
+      suscribe_on_topic="//@node.1/@create_topic.0"
+      publish_on_topic="//@node.1/@create_topic.0"
+      edge_node="//@node.5 //@node.9">
+    <create_topic
+        name="Brightness"
+        data="//@data.1"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepBrightness"
+        id="1">
+      <rule
+          apply_to="//@node.1/@create_topic.0"
+          id="1"
+          eventType="EventBrightness"
+          rule="select value from EsperClient.EventBrightness where value &lt; 60">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleBrightness"
+            message="The brightness is lower than 60%, lights on!"
+            publish_on_topic="//@node.1/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Water"
+      id="2"
+      suscribe_on_topic="//@node.2/@create_topic.0"
+      publish_on_topic="//@node.2/@create_topic.0"
+      edge_node="//@node.6 //@node.10">
+    <create_topic
+        name="Water"
+        data="//@data.2"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepWater"
+        id="2">
+      <rule
+          apply_to="//@node.2/@create_topic.0"
+          id="2"
+          eventType="EventWater"
+          rule="select value from EsperClient.EventWater where value &lt; 30.5">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleWater"
+            message="The water level is decreasing, might be a leak!"
+            publish_on_topic="//@node.2/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Gas"
+      id="3"
+      suscribe_on_topic="//@node.3/@create_topic.0"
+      publish_on_topic="//@node.3/@create_topic.0"
+      edge_node="//@node.7 //@node.11">
+    <create_topic
+        name="Gas"
+        data="//@data.3"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepGas"
+        id="3">
+      <rule
+          apply_to="//@node.3/@create_topic.0"
+          id="3"
+          eventType="EventGas"
+          rule="select value from EsperClient.EventGas where value &lt; 35.6">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleGas"
+            message="The gas level is decreasing, might be a leak!"
+            publish_on_topic="//@node.3/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensPresence"
+      publish_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensBrightness"
+      id="1"
+      publish_on_topic="//@node.1/@create_topic.0"
+      data="//@data.1"/>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensWater"
+      id="2"
+      publish_on_topic="//@node.2/@create_topic.0"
+      data="//@data.2"/>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensGas"
+      id="3"
+      publish_on_topic="//@node.3/@create_topic.0"
+      data="//@data.3"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actPresence"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actBrightness"
+      id="1"
+      suscribe_on_topic="//@node.1/@create_topic.0"
+      quantity="2"
+      data="//@data.1"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actWater"
+      id="2"
+      suscribe_on_topic="//@node.2/@create_topic.0"
+      data="//@data.2"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actGas"
+      id="3"
+      suscribe_on_topic="//@node.3/@create_topic.0"
+      data="//@data.3"/>
+  <data name="Presence"
+      DataType="BOOLEAN">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        GenerationName="randPresence">
+      <generationRange
+          Lower="0"
+          Upper="1"/>
+    </datasource>
+  </data>
+  <data name="Brightness"
+      id="1">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        id="1"
+        GenerationName="randBrightness">
+      <generationRange
+          id="2"
+          Lower="0"
+          Upper="100"/>
+    </datasource>
+  </data>
+  <data name="Water"
+      id="2"
+      DataType="FLOAT">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        id="2"
+        GenerationName="randWater">
+      <generationRange
+          id="2"
+          Lower="1"
+          Upper="250"/>
+    </datasource>
+  </data>
+  <data name="Gas"
+      id="3"
+      DataType="FLOAT">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        id="3"
+        GenerationName="randGas">
+      <generationRange
+          id="3"
+          Lower="1"
+          Upper="250"/>
+    </datasource>
+  </data>
+</iOTMetaModel:Environment>

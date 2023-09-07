@@ -1,0 +1,13 @@
+1694100634: mosquitto version 2.0.15 starting
+1694100634: Config loaded from /mosquitto/config/mosquitto.conf.
+1694100634: Opening ipv4 listen socket on port 1883.
+1694100634: Opening ipv6 listen socket on port 1883.
+1694100634: mosquitto version 2.0.15 running
+1694100638: New connection from 10.244.2.234:39904 on port 1883.
+1694100639: New client connected from 10.244.2.234:39904 as Humidity_EsperComponent (p2, c1, k30).
+1694100646: New connection from 10.244.2.231:36052 on port 1883.
+1694100646: New client connected from 10.244.2.231:36052 as actHumidity_0_9744093 (p2, c1, k30).
+1694100649: New connection from 10.244.2.233:52072 on port 1883.
+1694100650: New client connected from 10.244.2.233:52072 as Humidity_0 (p2, c1, k30).
+1694100650: New connection from 10.244.2.237:56114 on port 1883.
+1694100650: New client connected from 10.244.2.237:56114 as sensHumidity_0_2704624 (p2, c1, k30).

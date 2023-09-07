@@ -1,0 +1,58 @@
+1694029674: mosquitto version 2.0.15 starting
+1694029674: Config loaded from /mosquitto/config/mosquitto.conf.
+1694029674: Opening ipv4 listen socket on port 1883.
+1694029674: Opening ipv6 listen socket on port 1883.
+1694029674: mosquitto version 2.0.15 running
+1694029682: New connection from 10.244.2.189:56112 on port 1883.
+1694029683: New client connected from 10.244.2.189:56112 as Brightness_EsperComponent (p2, c1, k30).
+1694029694: New connection from 10.244.2.188:49138 on port 1883.
+1694029694: New client connected from 10.244.2.188:49138 as Brightness_1 (p2, c1, k30).
+1694029701: New connection from 10.244.2.193:39736 on port 1883.
+1694029701: New client connected from 10.244.2.193:39736 as actBrightness_1_6271770 (p2, c1, k30).
+1694029703: New connection from 10.244.2.203:46512 on port 1883.
+1694029703: New client connected from 10.244.2.203:46512 as sensBrightness_1_5170940 (p2, c1, k30).
+1694029713: Client Brightness_EsperComponent closed its connection.
+1694029716: New connection from 10.244.2.189:36078 on port 1883.
+1694029716: New client connected from 10.244.2.189:36078 as Brightness_EsperComponent (p2, c1, k30).
+1694029719: Client Brightness_EsperComponent closed its connection.
+1694029722: New connection from 10.244.2.189:36084 on port 1883.
+1694029722: New client connected from 10.244.2.189:36084 as Brightness_EsperComponent (p2, c1, k30).
+1694029725: Client Brightness_EsperComponent closed its connection.
+1694029728: New connection from 10.244.2.189:50978 on port 1883.
+1694029728: New client connected from 10.244.2.189:50978 as Brightness_EsperComponent (p2, c1, k30).
+1694029732: Client Brightness_EsperComponent closed its connection.
+1694029734: New connection from 10.244.2.189:50988 on port 1883.
+1694029734: New client connected from 10.244.2.189:50988 as Brightness_EsperComponent (p2, c1, k30).
+1694029738: Client Brightness_EsperComponent closed its connection.
+1694029740: New connection from 10.244.2.189:35762 on port 1883.
+1694029740: New client connected from 10.244.2.189:35762 as Brightness_EsperComponent (p2, c1, k30).
+1694029744: Client Brightness_EsperComponent closed its connection.
+1694029746: New connection from 10.244.2.189:59268 on port 1883.
+1694029746: New client connected from 10.244.2.189:59268 as Brightness_EsperComponent (p2, c1, k30).
+1694029750: Client Brightness_EsperComponent closed its connection.
+1694029752: New connection from 10.244.2.189:59276 on port 1883.
+1694029752: New client connected from 10.244.2.189:59276 as Brightness_EsperComponent (p2, c1, k30).
+1694029755: Client Brightness_EsperComponent closed its connection.
+1694029758: New connection from 10.244.2.189:41286 on port 1883.
+1694029758: New client connected from 10.244.2.189:41286 as Brightness_EsperComponent (p2, c1, k30).
+1694029761: Client Brightness_EsperComponent closed its connection.
+1694029764: New connection from 10.244.2.189:41302 on port 1883.
+1694029764: New client connected from 10.244.2.189:41302 as Brightness_EsperComponent (p2, c1, k30).
+1694029767: Client Brightness_EsperComponent closed its connection.
+1694029770: New connection from 10.244.2.189:32774 on port 1883.
+1694029770: New client connected from 10.244.2.189:32774 as Brightness_EsperComponent (p2, c1, k30).
+1694029774: Client Brightness_EsperComponent closed its connection.
+1694029776: New connection from 10.244.2.189:33818 on port 1883.
+1694029776: New client connected from 10.244.2.189:33818 as Brightness_EsperComponent (p2, c1, k30).
+1694029780: Client Brightness_EsperComponent closed its connection.
+1694029782: New connection from 10.244.2.189:33832 on port 1883.
+1694029782: New client connected from 10.244.2.189:33832 as Brightness_EsperComponent (p2, c1, k30).
+1694029786: Client Brightness_EsperComponent closed its connection.
+1694029788: New connection from 10.244.2.189:57616 on port 1883.
+1694029788: New client connected from 10.244.2.189:57616 as Brightness_EsperComponent (p2, c1, k30).
+1694029794: Client Brightness_EsperComponent closed its connection.
+1694029794: New connection from 10.244.2.189:57624 on port 1883.
+1694029794: New client connected from 10.244.2.189:57624 as Brightness_EsperComponent (p2, c1, k30).
+1694029798: Client Brightness_EsperComponent closed its connection.
+1694029800: New connection from 10.244.2.189:35780 on port 1883.
+1694029800: New client connected from 10.244.2.189:35780 as Brightness_EsperComponent (p2, c1, k30).

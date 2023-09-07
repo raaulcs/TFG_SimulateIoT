@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iOTMetaModel:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iOTMetaModel="http://www.example.org/iOTMetaModel"
+    name="">
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogA"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      publish_on_topic="//@node.0/@create_topic.0"
+      edge_node="//@node.1 //@node.2">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Raspberry"
+        IP="192.168.48.42"/>
+    <create_topic
+        name="A"
+        data="//@data.0"/>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="SensA"
+      publish_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Arduino"
+        IP="5.6.7.8">
+      <arduinoconfiguration
+          deviceType="RotatoryPotentiometer">
+        <input
+            input="0"/>
+      </arduinoconfiguration>
+    </hil_node_configuration>
+  </node>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="ActA"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <data name="Data">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        GenerationName="alea">
+      <generationRange
+          Lower="0"
+          Upper="100"/>
+    </datasource>
+  </data>
+</iOTMetaModel:Environment>

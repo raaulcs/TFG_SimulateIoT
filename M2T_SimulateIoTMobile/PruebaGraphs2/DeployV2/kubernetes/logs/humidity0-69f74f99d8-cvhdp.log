@@ -1,0 +1,28 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.014777397373871845488.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+Sep 07, 2023 4:24:30 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG Humidity_0 | Received data: { "value" : "126" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "93" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "103" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "112" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "200" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "195" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "139" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "233" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "25" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "243" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "172" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "103" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "213" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "189" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "195" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "116" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "116" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "41" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "211" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "28" } |From topic: Humidity

@@ -1,0 +1,13 @@
+1694100814: mosquitto version 2.0.15 starting
+1694100814: Config loaded from /mosquitto/config/mosquitto.conf.
+1694100814: Opening ipv4 listen socket on port 1883.
+1694100814: Opening ipv6 listen socket on port 1883.
+1694100814: mosquitto version 2.0.15 running
+1694100816: New connection from 10.244.2.254:54730 on port 1883.
+1694100817: New client connected from 10.244.2.254:54730 as WaterLevel_EsperComponent (p2, c1, k30).
+1694100823: New connection from 10.244.2.248:59718 on port 1883.
+1694100823: New client connected from 10.244.2.248:59718 as actWaterLevel_2_2072248 (p2, c1, k30).
+1694100824: New connection from 10.244.2.250:55960 on port 1883.
+1694100824: New client connected from 10.244.2.250:55960 as sensWaterLevel_2_8980487 (p2, c1, k30).
+1694100828: New connection from 10.244.2.253:37760 on port 1883.
+1694100828: New client connected from 10.244.2.253:37760 as WaterLevel_2 (p2, c1, k30).

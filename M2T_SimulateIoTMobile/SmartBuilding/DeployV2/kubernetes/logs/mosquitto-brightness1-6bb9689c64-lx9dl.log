@@ -1,0 +1,13 @@
+1694024039: mosquitto version 2.0.15 starting
+1694024039: Config loaded from /mosquitto/config/mosquitto.conf.
+1694024039: Opening ipv4 listen socket on port 1883.
+1694024039: Opening ipv6 listen socket on port 1883.
+1694024039: mosquitto version 2.0.15 running
+1694024064: New connection from 10.244.2.166:35422 on port 1883.
+1694024064: New client connected from 10.244.2.166:35422 as Brightness_1 (p2, c1, k30).
+1694024182: New connection from 10.244.2.170:36728 on port 1883.
+1694024182: New client connected from 10.244.2.170:36728 as sensBrightness_1_9741727 (p2, c1, k30).
+1694024314: New connection from 10.244.2.179:42634 on port 1883.
+1694024314: New client connected from 10.244.2.179:42634 as Brightness_EsperComponent (p2, c1, k30).
+1694024405: New connection from 10.244.2.183:50430 on port 1883.
+1694024406: New client connected from 10.244.2.183:50430 as actBrightness_1_7350018 (p2, c1, k30).

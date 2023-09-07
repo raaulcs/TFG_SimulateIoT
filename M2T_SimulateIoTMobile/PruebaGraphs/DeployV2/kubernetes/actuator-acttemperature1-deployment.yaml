@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: actuator-acttemperature1
+  name: actuator-acttemperature1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: actuator-acttemperature1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: actuator-acttemperature1
+    spec:
+      containers:
+        - image: raaulcs/tfg:actuator-acttemperature1
+          name: actuator-acttemperature1
+          resources: {}
+      restartPolicy: Always
+status: {}
+

@@ -1,0 +1,116 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.018164422290632700686.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0.default.svc.cluster.local:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-foga0.default.svc.cluster.local:1884
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "96" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "72" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "13" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "90" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "12" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "64" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "85" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "81" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "35" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "99" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "48" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "14" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "78" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "42" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "99" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "60" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "89" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "65" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "19" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "9" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "55" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "37" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "83" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "54" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "37" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "27" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "9" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "69" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "17" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "83" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "60" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "17" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "30" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "95" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "34" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "86" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "47" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "67" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "86" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "39" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "5" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "81" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "0" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "53" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "78" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "89" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "2" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "1" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "73" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "32" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "35" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "24" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "4" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "72" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "23" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "33" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "1" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "63" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "73" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "36" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "52" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "81" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "45" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "20" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "7" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "48" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "93" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "50" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "67" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "42" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "6" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "69" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "7" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "79" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "34" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "39" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "26" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "82" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "2" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "54" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "28" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "70" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "71" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "78" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "75" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "33" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "21" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "16" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "98" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "84" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "88" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "33" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "20" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "44" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "58" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "14" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "79" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "40" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "71" } | To topic B
+DEVICE SensB_0_6522680 | Publishing data = { "value" : "53" } | To topic B
+Jun 16, 2023 11:03:31 AM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready

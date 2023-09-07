@@ -1,0 +1,20 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.06779842165389746634.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-gas3:1887
+Sep 06, 2023 6:20:29 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "50" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "154" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "17" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "103" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "54" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "172" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "230" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "246" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "119" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "7" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "196" } | Doing following action in consequence: actuando!
+ACTUATORactGas_3_5807761 | Receive data: { "value" : "241" } | Doing following action in consequence: actuando!

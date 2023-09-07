@@ -1,0 +1,77 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.017581815665630373890.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+FOG WaterLevel_2 | Received data: { "value" : "52" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "233" } |From topic: WaterLevel
+Sep 07, 2023 4:21:39 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG WaterLevel_2 | Received data: { "value" : "25" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "43" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "157" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "194" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "149" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "187" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "98" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "9" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "210" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "27" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "232" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "230" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "8" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "225" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "202" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "199" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "30" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "24" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "165" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "206" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "74" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "105" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "7" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "192" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "140" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "20" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "145" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "116" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "10" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "173" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "166" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "222" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "140" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "203" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "26" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "166" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "150" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "115" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "211" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "57" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "141" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "232" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "244" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "53" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "124" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "63" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "38" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "132" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "82" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "90" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "16" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "48" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "159" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "203" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "204" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "97" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "5" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "156" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "240" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "219" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "134" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "244" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "10" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "106" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "170" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "173" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "23" } |From topic: WaterLevel

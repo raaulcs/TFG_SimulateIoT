@@ -1,0 +1,108 @@
+version: "3"
+services:
+  #START Process Node fogA0 environment configuration
+  foga0:
+    image: localhost:5000/foga0
+    container_name: foga0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  mosquitto-foga0:
+    image: eclipse-mosquitto
+    container_name: mosquitto-foga0
+    ports:
+      - "1884:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-fogA0.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+
+
+  sensor-sensa0:
+    image: localhost:5000/sensor-sensa0
+    container_name: sensor-sensa0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  actuator-acta0:
+    image: localhost:5000/actuator-acta0
+    container_name: actuator-acta0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+  #END Process Node fogA0 environment configuration
+
+  #START Process Node fogB0 environment configuration
+  fogb0:
+    image: localhost:5000/fogb0
+    container_name: fogb0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB0"
+
+  mosquitto-fogb0:
+    image: eclipse-mosquitto
+    container_name: mosquitto-fogb0
+    ports:
+      - "1885:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-fogB0.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB0"
+
+
+
+  sensor-sensb0:
+    image: localhost:5000/sensor-sensb0
+    container_name: sensor-sensb0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB0"
+
+  actuator-actb0:
+    image: localhost:5000/actuator-actb0
+    container_name: actuator-actb0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB0"
+  #END Process Node fogB0 environment configuration
+
+
+  #START Node-RED configuration
+  #node-red:
+    #image: nodered/node-red:latest
+    #container_name: node-red
+    #ports:
+      #- "1880:1880"
+    #restart: unless-stopped
+    #networks:
+      #- simulateiot
+    #volumes:
+      #- node-red-data:/data
+    #environment:
+      #- TZ=Europe/Madrid
+  #END Node-RED configuration
+
+#volumes:
+  #node-red-data:
+
+networks:
+  simulateiot:
+    name: simulateiot
+    driver: overlay
+    attachable: true

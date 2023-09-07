@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/IOTMetaModel/src" modelPluginID="IOTMetaModel"
+    modelName="IOTMetaModel" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>iOTMetaModel.emf</foreignModel>
+  <genPackages prefix="IOTMetaModel" disposableProviderFactory="true" ecorePackage="iOTMetaModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//Size">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/XS"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/S"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/M"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/L"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/XL"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//Size/XXL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//BrokerType">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//BrokerType/Mosquitto"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//CloudType">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//CloudType/AWS"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//CloudType/Azure"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//CloudType/Heroku"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//CloudType/OpenShift"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//CloudType/Undefined"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//DataType">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//DataType/INTEGER"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//DataType/STRING"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//DataType/BOOLEAN"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//DataType/FLOAT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//DataBaseProvider">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//DataBaseProvider/MongoDB"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//ProcessEngineProvider">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ProcessEngineProvider/EsperTech"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ProcessEngineProvider/WSO2"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//ArduinoModel">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/AdafruitCircuitPlayground"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/BT"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/DuemilanoveOrDiecimila"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Esplora"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Ethernet"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Fio"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Gemma"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Industrial101"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Leonardo"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/LeonardoETH"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/MegaADK"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/MegaOrMega2560"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Micro"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Mini"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/NGOrOlder"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Nano"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/ProOrProMini"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/RobotControl"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/RobotMotor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Uno"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/UnoMini"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/UnoWiFi"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/Yun"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/YunMini"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/LilyPadArduino"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/LilyPadArduinoUSB"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoModel/LininoOne"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="iOTMetaModel.ecore#//ArduinoDeviceType">
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Thermistor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/RotatoryPotentiometer"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/TiltSensor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Photoresistor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Accelerometer"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/PushbuttonModule"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/LinearPotentiometer"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/TouchSensor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/JoystickModule"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Gyroscope"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/HallSensor"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/LED"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/HighPowerLED"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Mosfet"/>
+      <genEnumLiterals ecoreEnumLiteral="iOTMetaModel.ecore#//ArduinoDeviceType/Relay"/>
+    </genEnums>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Environment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Environment/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Environment/simulationSpeed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Environment/numberOfMessages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Environment/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Environment/data"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Environment/route"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Environment/securitysystem"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Node/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Node/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Node/coordinates"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Node/suscribe_on_topic"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Node/publish_on_topic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Node/hil_node_configuration"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//EdgeNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EdgeNode/quantity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//EdgeNode/additionalconfiguration"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//EdgeNode/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EdgeNode/CoverageSignalGain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EdgeNode/IntermediateBufferSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EdgeNode/BatteryManagement"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//ProcessNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ProcessNode/edge_node"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ProcessNode/redirect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessNode/redirectionTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ProcessNode/create_topic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessNode/size"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ProcessNode/component"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessNode/BrokerType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessNode/CovergaSignalPower"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessNode/jitterControl"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Sensor/generation_speed"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Actuator"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//FogNode"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//CloudNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//CloudNode/CloudType"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//AdditionalConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//AdditionalConfiguration/id"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Coordinates">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Coordinates/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Coordinates/latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Coordinates/longitude"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Data/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Data/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Data/DataType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Data/datasource"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Topic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Topic/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Topic/data"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Component/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//DataBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//DataBase/DataBaseProvider"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//ProcessEngine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ProcessEngine/ProcessEngineProvider"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ProcessEngine/rule"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//SP"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//CEP"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//NoSQL"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Rule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Rule/apply_to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Rule/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Rule/eventType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Rule/rule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Rule/generates_notification"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//Notification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Notification/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Notification/message"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Notification/route"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//EmailNotification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EmailNotification/destinyNotification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EmailNotification/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EmailNotification/SMTPserver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//EmailNotification/password"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//TopicNotification">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//TopicNotification/publish_on_topic"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//RedirectionConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//RedirectionConfiguration/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//RedirectionConfiguration/route_processnode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//RedirectionConfiguration/topic"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//DataSource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//DataSource/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//LoadFromFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//LoadFromFile/FileName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//DataGeneration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//DataGeneration/GenerationName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//DataGeneration/generationRange"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//GenerationRange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//GenerationRange/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//GenerationRange/Lower"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//GenerationRange/Upper"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Aleatory"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//CSVload"/>
+    <genClasses image="false" ecoreClass="iOTMetaModel.ecore#//HIL_Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//HIL_Node/IP"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Arduino">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Arduino/arduinoModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//Arduino/arduinoconfiguration"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Raspberry"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//UserDevice"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//ArduinoConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ArduinoConfiguration/deviceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//ArduinoConfiguration/output"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//ArduinoConfiguration/input"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Input">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Input/input"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//Route">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//Route/name"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//FogCloudRoute"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//RandomRoute"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//CSV_Route"/>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//LinearRoute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//LinearRoute/coordinates"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//SecuritySystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iOTMetaModel.ecore#//SecuritySystem/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference iOTMetaModel.ecore#//SecuritySystem/tokensecuritysystem"/>
+    </genClasses>
+    <genClasses ecoreClass="iOTMetaModel.ecore#//TokenSecuritySystem"/>
+  </genPackages>
+  <genPackages prefix="Ecore" ecorePackage="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#/">
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBigDecimal"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBigInteger"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBooleanObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EByte"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EByteArray"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EByteObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EChar"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ECharacterObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDate"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDiagnosticChain"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDouble"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDoubleObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEList">
+      <genTypeParameters ecoreTypeParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEList/E"/>
+    </genDataTypes>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumerator"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFeatureMap"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFeatureMapEntry"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFloat"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFloatObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EJavaClass">
+      <genTypeParameters ecoreTypeParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EJavaClass/T"/>
+    </genDataTypes>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EJavaObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ELong"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ELongObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EMap">
+      <genTypeParameters ecoreTypeParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EMap/K"/>
+      <genTypeParameters ecoreTypeParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EMap/V"/>
+    </genDataTypes>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EResource"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EResourceSet"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EShort"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EShortObject"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETreeIterator">
+      <genTypeParameters ecoreTypeParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETreeIterator/E"/>
+    </genDataTypes>
+    <genDataTypes ecoreDataType="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInvocationTargetException"/>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAttribute/iD"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAttribute/eAttributeType"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/details"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/eModelElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/contents"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/references"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/abstract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/interface"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eSuperTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eOperations"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllAttributes"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllReferences"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eReferences"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAttributes"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllContainments"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllOperations"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllStructuralFeatures"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllSuperTypes"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eIDAttribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eStructuralFeatures"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eGenericSuperTypes"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eAllGenericSuperTypes"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/isSuperTypeOf">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/isSuperTypeOf/someClass"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getFeatureCount"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEStructuralFeature">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEStructuralFeature/featureID"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getFeatureID">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getFeatureID/feature"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEStructuralFeature.1">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEStructuralFeature.1/featureName"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getOperationCount"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEOperation">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getEOperation/operationID"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getOperationID">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getOperationID/operation"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getOverride">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getOverride/operation"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getFeatureType">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/getFeatureType/feature"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceClass"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceTypeName"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/ePackage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/eTypeParameters"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/isInstance">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/isInstance/object"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/getClassifierID"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDataType/serializable"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/eLiterals"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteral">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteral/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteral.1">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteral.1/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteralByLiteral">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum/getEEnumLiteralByLiteral/literal"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/instance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/literal"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/eEnum"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/ePackage"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/create">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/create/eClass"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/createFromString">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/createFromString/eDataType"/>
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/createFromString/literalValue"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/convertToString">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/convertToString/eDataType"/>
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/convertToString/instanceValue"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EModelElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EModelElement/eAnnotations"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EModelElement/getEAnnotation">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EModelElement/getEAnnotation/source"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject">
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eClass"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eIsProxy"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eResource"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eContainer"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eContainingFeature"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eContainmentFeature"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eContents"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eAllContents"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eCrossReferences"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eGet">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eGet/feature"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eGet.1">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eGet.1/feature"/>
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eGet.1/resolve"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eSet">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eSet/feature"/>
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eSet/newValue"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eIsSet">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eIsSet/feature"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eUnset">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eUnset/feature"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eInvoke">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eInvoke/operation"/>
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject/eInvoke/arguments"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eContainingClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eTypeParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eParameters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eExceptions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eGenericExceptions"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/getOperationID"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/isOverrideOf">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/isOverrideOf/someOperation"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/nsURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/nsPrefix"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eFactoryInstance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eClassifiers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eSubpackages"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eSuperPackage"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/getEClassifier">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/getEClassifier/name"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EParameter">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EParameter/eOperation"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/containment"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/container"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/resolveProxies"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/eOpposite"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/eReferenceType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/eKeys"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/changeable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/volatile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/transient"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/defaultValueLiteral"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/unsettable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/derived"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/eContainingClass"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/getFeatureID"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/getContainerClass"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/upperBound"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/many"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/required"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eGenericType"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eUpperBound"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eTypeArguments"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eRawType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eLowerBound"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eTypeParameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eClassifier"/>
+      <genOperations ecoreOperation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/isInstance">
+        <genParameters ecoreParameter="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/isInstance/object"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypeParameter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypeParameter/eBounds"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

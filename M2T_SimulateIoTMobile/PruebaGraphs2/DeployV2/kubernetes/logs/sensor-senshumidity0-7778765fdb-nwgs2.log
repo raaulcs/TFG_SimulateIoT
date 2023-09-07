@@ -1,0 +1,27 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.0981394500975062087.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "126" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "93" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "103" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "112" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "200" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "195" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "139" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "233" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "25" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "243" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "172" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "103" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "213" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "189" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "195" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "116" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "116" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "41" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "211" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "28" } | To topic Humidity
+DEVICE sensHumidity_0_1042029 | Publishing data = { "value" : "247" } | To topic Humidity

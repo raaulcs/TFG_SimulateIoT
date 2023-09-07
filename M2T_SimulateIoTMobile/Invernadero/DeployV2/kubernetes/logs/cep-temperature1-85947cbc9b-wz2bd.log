@@ -1,0 +1,52 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Temperature1-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-temperature1:1885
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER Temperature_EsperComponent | Received data: { "value" : "16" } |From topic: Temperature
+ESPER Temperature_EsperComponent | Received data: { "value" : "13" } |From topic: Temperature
+ESPER | Publishing data: Temperature is below 16 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature is below 16 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "47" } |From topic: Temperature
+ESPER | Publishing data: Temperature has surpassed 25 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature has surpassed 25 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "11" } |From topic: Temperature
+ESPER | Publishing data: Temperature is below 16 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature is below 16 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "37" } |From topic: Temperature
+ESPER | Publishing data: Temperature has surpassed 25 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature has surpassed 25 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "24" } |From topic: Temperature
+ESPER Temperature_EsperComponent | Received data: { "value" : "45" } |From topic: Temperature
+ESPER | Publishing data: Temperature has surpassed 25 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature has surpassed 25 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "28" } |From topic: Temperature
+ESPER | Publishing data: Temperature has surpassed 25 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature has surpassed 25 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-temperature1:1885
+Resubscribing to topics...
+ESPER Temperature_EsperComponent | Received data: { "value" : "41" } |From topic: Temperature
+ESPER | Publishing data: Temperature has surpassed 25 degrees. | To topic: Temperature
+ESPER Temperature_EsperComponent | Received data: Temperature has surpassed 25 degrees. |From topic: Temperature
+PROBLEMs reconnectting to tcp://mosquitto-temperature1:1885, waiting 3 seconds for the next reconnection attempt

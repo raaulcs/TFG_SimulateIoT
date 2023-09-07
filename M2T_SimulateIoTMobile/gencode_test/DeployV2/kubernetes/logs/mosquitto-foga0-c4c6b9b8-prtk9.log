@@ -1,0 +1,13 @@
+1686913274: mosquitto version 2.0.15 starting
+1686913274: Config loaded from /mosquitto/config/mosquitto.conf.
+1686913274: Opening ipv4 listen socket on port 1883.
+1686913274: Opening ipv6 listen socket on port 1883.
+1686913274: mosquitto version 2.0.15 running
+1686913310: New connection from 10.244.1.100:48934 on port 1883.
+1686913310: New client connected from 10.244.1.100:48934 as ActA_0_1179801 (p2, c1, k30).
+1686913310: New connection from 10.244.1.101:35156 on port 1883.
+1686913310: New client connected from 10.244.1.101:35156 as SensA_0_3509826 (p2, c1, k30).
+1686913311: New connection from 10.244.1.104:49214 on port 1883.
+1686913311: New client connected from 10.244.1.104:49214 as SensB_0_6522680 (p2, c1, k30).
+1686913311: New connection from 10.244.1.97:60314 on port 1883.
+1686913311: New client connected from 10.244.1.97:60314 as fogA_0 (p2, c1, k30).

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: foga0
+  name: foga0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: foga0
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: foga0
+    spec:
+      containers:
+        - image: raaulcs/tfg:foga0
+          name: foga0
+          resources: {}
+      restartPolicy: Always
+status: {}

@@ -1,0 +1,27 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.013767206917946730047.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-temperature1:1885
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "210" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "201" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "98" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "72" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "65" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "122" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "118" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "63" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "48" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "234" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "85" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "198" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "116" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "192" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "45" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "139" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "242" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "249" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "187" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "142" } | To topic Humidity
+DEVICE sensTemperature_1_1176836 | Publishing data = { "value" : "127" } | To topic Humidity

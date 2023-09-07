@@ -1,0 +1,52 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.06066170413382848939.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+Aug 22, 2023 6:07:41 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG Humidity_0 | Received data: { "value" : "50" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "8" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "181" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "101" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "1" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "155" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "142" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "22" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "176" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "238" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "8" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "101" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "98" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "198" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "124" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "137" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "16" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "26" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "204" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "245" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "136" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "10" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "115" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "58" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "247" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "66" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "104" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "227" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "85" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "20" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "131" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "98" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "26" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "222" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "43" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "64" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "117" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "187" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "1" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "210" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "75" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "113" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "132" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "175" } |From topic: Humidity

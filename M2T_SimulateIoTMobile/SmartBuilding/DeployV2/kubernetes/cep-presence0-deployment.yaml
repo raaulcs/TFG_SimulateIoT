@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: cep-presence0
+  name: cep-presence0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cep-presence0
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: cep-presence0
+    spec:
+      containers:
+        - image: raaulcs/tfg:esper-presence0
+          name: cep-presence0
+          resources: {}
+      restartPolicy: Always
+status: {}

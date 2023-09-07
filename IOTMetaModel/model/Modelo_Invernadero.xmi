@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iOTMetaModel:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iOTMetaModel="http://www.example.org/iOTMetaModel">
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Humidity"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      publish_on_topic="//@node.0/@create_topic.0"
+      edge_node="//@node.3 //@node.6">
+    <create_topic
+        name="Humidity"
+        data="//@data.0"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepHumidity">
+      <rule
+          apply_to="//@node.0/@create_topic.0"
+          eventType="EventHumidity"
+          rule="select value from EsperClient.EventHumidity where value &lt; 50">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleHumidity"
+            message="Humidity is decreasing, it is below 50%."
+            publish_on_topic="//@node.0/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="Temperature"
+      id="1"
+      suscribe_on_topic="//@node.1/@create_topic.0"
+      publish_on_topic="//@node.1/@create_topic.0"
+      edge_node="//@node.4 //@node.7">
+    <create_topic
+        name="Temperature"
+        data="//@data.1"/>
+    <component
+        xsi:type="iOTMetaModel:NoSQL"
+        name="mongo"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepTemperature"
+        id="1">
+      <rule
+          apply_to="//@node.1/@create_topic.0"
+          id="1"
+          eventType="EventTemperatureLow"
+          rule="select value from EsperClient.EventTemperatureLow where value &lt; 16">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleTemperature"
+            message="Temperature is below 16 degrees."
+            publish_on_topic="//@node.1/@create_topic.0"/>
+      </rule>
+      <rule
+          apply_to="//@node.1/@create_topic.0"
+          id="2"
+          eventType="EventTemperatureHigh"
+          rule="select value from EsperClient.EventTemperatureHigh where value > 25">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleTemperature"
+            message="Temperature has surpassed 25 degrees."
+            publish_on_topic="//@node.1/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="WaterLevel"
+      id="2"
+      suscribe_on_topic="//@node.2/@create_topic.0"
+      publish_on_topic="//@node.2/@create_topic.0"
+      edge_node="//@node.5 //@node.8">
+    <create_topic
+        name="WaterLevel"
+        data="//@data.2"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepWaterLevel"
+        id="2">
+      <rule
+          apply_to="//@node.2/@create_topic.0"
+          id="3"
+          eventType="EventWaterLevel"
+          rule="select value from EsperClient.EventWaterLevel where value &lt; 15">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleWaterLevel"
+            message="The water level in the tank is below 10 liters."
+            publish_on_topic="//@node.0/@create_topic.0"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensHumidity"
+      publish_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensTemperature"
+      id="1"
+      publish_on_topic="//@node.1/@create_topic.0"
+      data="//@data.1"/>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="sensWaterLevel"
+      id="2"
+      publish_on_topic="//@node.2/@create_topic.0"
+      data="//@data.2"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actHumidity"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actTemperature"
+      id="1"
+      suscribe_on_topic="//@node.1/@create_topic.0"
+      data="//@data.1"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="actWaterLevel"
+      id="2"
+      suscribe_on_topic="//@node.2/@create_topic.0"
+      data="//@data.2"/>
+  <data name="Humidity">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        GenerationName="randH">
+      <generationRange
+          Lower="0"
+          Upper="100"/>
+    </datasource>
+  </data>
+  <data name="Temperature"
+      id="1"
+      DataType="FLOAT">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        id="1"
+        GenerationName="randT">
+      <generationRange
+          id="1"
+          Lower="5"
+          Upper="50"/>
+    </datasource>
+  </data>
+  <data name="WaterLevel"
+      id="2"
+      DataType="FLOAT">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        id="2"
+        GenerationName="randWL">
+      <generationRange
+          id="2"
+          Lower="0"
+          Upper="500"/>
+    </datasource>
+  </data>
+</iOTMetaModel:Environment>

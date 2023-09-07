@@ -1,0 +1,43 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.018361749568389030486.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-foga0:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-foga0:1884
+Connected to tcp://mosquitto-fogb0:1885
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.wildfly.swarm.bootstrap.MainInvoker.invoke(MainInvoker.java:57)
+	at org.wildfly.swarm.bootstrap.Main.run(Main.java:134)
+	at org.wildfly.swarm.bootstrap.Main.main(Main.java:87)
+Caused by: java.lang.NullPointerException
+	at java.base/java.io.Reader.<init>(Unknown Source)
+	at java.base/java.io.InputStreamReader.<init>(Unknown Source)
+	at thorntail.application//Gestores.Main.LoadCsv(Main.java:59)
+	at thorntail.application//Gestores.Main.main(Main.java:126)
+	... 7 more
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.wildfly.swarm.bootstrap.MainInvoker.invoke(MainInvoker.java:57)
+	at org.wildfly.swarm.bootstrap.Main.run(Main.java:134)
+	at org.wildfly.swarm.bootstrap.Main.main(Main.java:87)
+Caused by: java.lang.NullPointerException
+	at java.base/java.io.Reader.<init>(Unknown Source)
+	at java.base/java.io.InputStreamReader.<init>(Unknown Source)
+	at thorntail.application//Gestores.Main.LoadCsv(Main.java:59)
+	at thorntail.application//Gestores.Main.main(Main.java:126)
+	... 7 more

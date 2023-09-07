@@ -1,0 +1,44 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.01255733069924552462.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "204" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "195" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "210" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "203" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "74" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "239" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "6" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "32" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "27" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "174" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "174" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "156" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "202" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "40" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "148" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "203" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "68" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "124" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "102" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "125" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "179" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "33" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "131" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "41" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "109" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "179" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "62" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "107" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "57" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "112" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "101" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "43" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "170" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "197" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "96" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "97" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "178" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_7125486 | Publishing data = { "value" : "10" } | To topic WaterLevel

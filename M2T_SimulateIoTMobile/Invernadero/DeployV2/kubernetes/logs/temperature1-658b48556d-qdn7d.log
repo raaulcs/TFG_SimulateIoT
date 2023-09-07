@@ -1,0 +1,52 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.07005872908004164050.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-temperature1:1885
+Aug 22, 2023 6:04:28 PM com.mongodb.internal.diagnostics.logging.Loggers shouldUseSLF4J
+WARNING: SLF4J not found on the classpath.  Logging is disabled for the 'org.mongodb.driver' component
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.wildfly.swarm.bootstrap.MainInvoker.invoke(MainInvoker.java:57)
+	at org.wildfly.swarm.bootstrap.Main.run(Main.java:134)
+	at org.wildfly.swarm.bootstrap.Main.main(Main.java:87)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongo-temperature1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: mongo-temperature1}, caused by {java.net.UnknownHostException: mongo-temperature1}}]
+	at thorntail.application//com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)
+	at thorntail.application//com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:143)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:100)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:285)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:177)
+	at thorntail.application//com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:130)
+	at thorntail.application//com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:90)
+	at thorntail.application//com.mongodb.client.internal.MappingIterable.iterator(MappingIterable.java:42)
+	at thorntail.application//Fog.MongoGestor.connectToMongo(MongoGestor.java:29)
+	at thorntail.application//Fog.MongoGestor.<init>(MongoGestor.java:23)
+	at thorntail.application//Fog.Main.main(Main.java:69)
+	... 7 more
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.wildfly.swarm.bootstrap.MainInvoker.invoke(MainInvoker.java:57)
+	at org.wildfly.swarm.bootstrap.Main.run(Main.java:134)
+	at org.wildfly.swarm.bootstrap.Main.main(Main.java:87)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongo-temperature1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: mongo-temperature1}, caused by {java.net.UnknownHostException: mongo-temperature1}}]
+	at thorntail.application//com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)
+	at thorntail.application//com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:143)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:100)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:285)
+	at thorntail.application//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:177)
+	at thorntail.application//com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:130)
+	at thorntail.application//com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:90)
+	at thorntail.application//com.mongodb.client.internal.MappingIterable.iterator(MappingIterable.java:42)
+	at thorntail.application//Fog.MongoGestor.connectToMongo(MongoGestor.java:29)
+	at thorntail.application//Fog.MongoGestor.<init>(MongoGestor.java:23)
+	at thorntail.application//Fog.Main.main(Main.java:69)
+	... 7 more

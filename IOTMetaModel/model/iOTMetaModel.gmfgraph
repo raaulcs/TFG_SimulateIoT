@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="iOTMetaModel">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeSuscribe_on_topicFigureSourceDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodePublish_on_topicFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="EdgeNodeDataFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ProcessNodeEdge_nodeFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ProcessNodeRedirectFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RuleApply_toFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TopicNotificationPublish_on_topicFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RedirectionConfigurationTopicFigureTargetDecoration"/>
+    <descriptors name="SensorFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SensorFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SensorLabelFigure" text="Sensor">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="SensorHil_node_configurationCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="SensorAdditionalconfigurationCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureSensorLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getSensorHil_node_configurationCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+      <accessors accessor="getSensorAdditionalconfigurationCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="ActuatorFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ActuatorFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ActuatorLabelFigure" text="Actuator">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ActuatorHil_node_configurationCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="ActuatorAdditionalconfigurationCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureActuatorLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getActuatorHil_node_configurationCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors accessor="getActuatorAdditionalconfigurationCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="FogNodeFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="FogNodeFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="203" green="225" blue="249"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="FogNodeLabelFigure" text="FogNode">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="FogNodeHil_node_configurationCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="FogNodeCreate_topicCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="FogNodeComponentCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureFogNodeLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+      <accessors accessor="getFogNodeHil_node_configurationCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.1"/>
+      <accessors accessor="getFogNodeCreate_topicCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.2"/>
+      <accessors accessor="getFogNodeComponentCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="CloudNodeFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CloudNodeFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="191" green="248" blue="203"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="CloudNodeLabelFigure" text="CloudNode">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="CloudNodeHil_node_configurationCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="CloudNodeCreate_topicCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="CloudNodeComponentCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureCloudNodeLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors accessor="getCloudNodeHil_node_configurationCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+      <accessors accessor="getCloudNodeCreate_topicCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.2"/>
+      <accessors accessor="getCloudNodeComponentCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="AdditionalConfigurationFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="AdditionalConfigurationFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/machineLearning.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="AdditionalConfigurationLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AdditionalConfigurationLabelFigure" text="AdditionalConfiguration"/>
+    </descriptors>
+    <descriptors name="CoordinatesFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CoordinatesFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="CoordinatesLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CoordinatesLabelFigure" text="Coordinates"/>
+    </descriptors>
+    <descriptors name="DataFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DataFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="DataLabelFigure" text="Data">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="DataDatasourceCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureDataLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+      <accessors accessor="getDataDatasourceCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="TopicFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="TopicFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/topic.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TopicLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TopicLabelFigure" text="Topic"/>
+    </descriptors>
+    <descriptors name="SPFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SPFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SPLabelFigure" text="SP">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="SPRuleCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureSPLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+      <accessors accessor="getSPRuleCompartmentFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="CEPFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CEPFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="191" green="248" blue="203"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="CEPLabelFigure" text="CEP">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="CEPRuleCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureCEPLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+      <accessors accessor="getCEPRuleCompartmentFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="NoSQLFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="NoSQLFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/mongo.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NoSQLLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="NoSQLLabelFigure" text="NoSQL"/>
+    </descriptors>
+    <descriptors name="RuleFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="RuleFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="191" green="248" blue="203"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="RuleLabelFigure" text="Rule">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="RuleGenerates_notificationCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureRuleLabelFigure" figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
+      <accessors accessor="getRuleGenerates_notificationCompartmentFigure" figure="//@figures.0/@descriptors.15/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="EmailNotificationFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="EmailNotificationFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/gmail.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="191" green="248" blue="203"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="EmailNotificationLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="EmailNotificationLabelFigure" text="EmailNotification"/>
+    </descriptors>
+    <descriptors name="TopicNotificationFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="TopicNotificationFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/notification.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="191" green="248" blue="203"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TopicNotificationLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TopicNotificationLabelFigure" text="TopicNotification"/>
+    </descriptors>
+    <descriptors name="RedirectionConfigurationFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="RedirectionConfigurationFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/redirect.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RedirectionConfigurationLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RedirectionConfigurationLabelFigure" text="RedirectionConfiguration"/>
+    </descriptors>
+    <descriptors name="GenerationRangeFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="GenerationRangeFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/range.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="GenerationRangeLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="GenerationRangeLabelFigure" text="GenerationRange"/>
+    </descriptors>
+    <descriptors name="AleatoryFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AleatoryFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="AleatoryLabelFigure" text="Aleatory"/>
+      </actualFigure>
+      <accessors accessor="getFigureAleatoryLabelFigure" figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CSVloadFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="CSVloadFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/csv.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="CSVloadLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CSVloadLabelFigure" text="CSVload"/>
+    </descriptors>
+    <descriptors name="ArduinoFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="ArduinoFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/arduino.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Rectangle" name="ArduinoArduinoconfigurationCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getArduinoArduinoconfigurationCompartmentFigure" figure="//@figures.0/@descriptors.27/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ArduinoLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ArduinoLabelFigure" text="Arduino">
+        <maximumSize dx="10000" dy="50"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RaspberryFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="RaspberryFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/raspberry.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RaspberryLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RaspberryLabelFigure" text="Raspberry"/>
+    </descriptors>
+    <descriptors name="UserDeviceFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="UserDeviceFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/userDevice.svg">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="226" green="150" blue="152"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="UserDeviceLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="UserDeviceLabelFigure" text="UserDevice"/>
+    </descriptors>
+    <descriptors name="ArduinoConfigurationFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="ArduinoConfigurationFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/arduino.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ArduinoConfigurationLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ArduinoConfigurationLabelFigure" text="ArduinoConfiguration"/>
+    </descriptors>
+    <descriptors name="InputFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="InputFigure" documentURI="platform:/plugin/IOTMetaModel/imagenes/telegram.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="InputLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="InputLabelFigure" text="Input"/>
+    </descriptors>
+    <descriptors name="NodeSuscribe_on_topicFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeSuscribe_on_topicFigure" lineWidth="3" lineKind="LINE_DASH" sourceDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="93"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NodeSuscribe_on_topicExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="NodeSuscribe_on_topicExternalLabel"/>
+    </descriptors>
+    <descriptors name="NodePublish_on_topicFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodePublish_on_topicFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="93"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NodePublish_on_topicExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="NodePublish_on_topicExternalLabel"/>
+    </descriptors>
+    <descriptors name="EdgeNodeDataFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EdgeNodeDataFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="51" green="51" blue="204"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="EdgeNodeDataExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="EdgeNodeDataExternalLabel"/>
+    </descriptors>
+    <descriptors name="ProcessNodeEdge_nodeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ProcessNodeEdge_nodeFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.3">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" green="102"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ProcessNodeEdge_nodeExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessNodeEdge_nodeExternalLabel"/>
+    </descriptors>
+    <descriptors name="ProcessNodeRedirectFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ProcessNodeRedirectFigure" lineWidth="3" targetDecoration="//@figures.0/@figures.4">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" blue="236"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ProcessNodeRedirectExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessNodeRedirectExternalLabel"/>
+    </descriptors>
+    <descriptors name="RuleApply_toFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RuleApply_toFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.5">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="46" green="204" blue="113"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RuleApply_toExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RuleApply_toExternalLabel"/>
+    </descriptors>
+    <descriptors name="TopicNotificationPublish_on_topicFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TopicNotificationPublish_on_topicFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.6">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="93"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TopicNotificationPublish_on_topicExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TopicNotificationPublish_on_topicExternalLabel"/>
+    </descriptors>
+    <descriptors name="RedirectionConfigurationTopicFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RedirectionConfigurationTopicFigure" lineWidth="3" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.7">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="93"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RedirectionConfigurationTopicExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RedirectionConfigurationTopicExternalLabel"/>
+    </descriptors>
+  </figures>
+  <nodes name="Sensor" figure="SensorFigure"/>
+  <nodes name="Actuator" figure="ActuatorFigure"/>
+  <nodes name="FogNode" figure="FogNodeFigure"/>
+  <nodes name="CloudNode" figure="CloudNodeFigure"/>
+  <nodes name="AdditionalConfiguration" figure="AdditionalConfigurationFigure"/>
+  <nodes name="Coordinates" figure="CoordinatesFigure"/>
+  <nodes name="Data" figure="DataFigure"/>
+  <nodes name="Topic" figure="TopicFigure"/>
+  <nodes name="SP" figure="SPFigure"/>
+  <nodes name="CEP" figure="CEPFigure"/>
+  <nodes name="NoSQL" figure="NoSQLFigure"/>
+  <nodes name="Rule" figure="RuleFigure"/>
+  <nodes name="EmailNotification" figure="EmailNotificationFigure"/>
+  <nodes name="TopicNotification" figure="TopicNotificationFigure"/>
+  <nodes name="RedirectionConfiguration" figure="RedirectionConfigurationFigure"/>
+  <nodes name="GenerationRange" figure="GenerationRangeFigure"/>
+  <nodes name="Aleatory" figure="AleatoryFigure"/>
+  <nodes name="CSVload" figure="CSVloadFigure"/>
+  <nodes name="Arduino" figure="ArduinoFigure"/>
+  <nodes name="Raspberry" figure="RaspberryFigure"/>
+  <nodes name="UserDevice" figure="UserDeviceFigure"/>
+  <nodes name="ArduinoConfiguration" figure="ArduinoConfigurationFigure"/>
+  <nodes name="Input" figure="InputFigure"/>
+  <connections name="NodeSuscribe_on_topic" figure="NodeSuscribe_on_topicFigure"/>
+  <connections name="NodePublish_on_topic" figure="NodePublish_on_topicFigure"/>
+  <connections name="EdgeNodeData" figure="EdgeNodeDataFigure"/>
+  <connections name="ProcessNodeEdge_node" figure="ProcessNodeEdge_nodeFigure"/>
+  <connections name="ProcessNodeRedirect" figure="ProcessNodeRedirectFigure"/>
+  <connections name="RuleApply_to" figure="RuleApply_toFigure"/>
+  <connections name="TopicNotificationPublish_on_topic" figure="TopicNotificationPublish_on_topicFigure"/>
+  <connections name="RedirectionConfigurationTopic" figure="RedirectionConfigurationTopicFigure"/>
+  <compartments name="SensorHil_node_configurationCompartment" figure="SensorFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="SensorAdditionalconfigurationCompartment" figure="SensorFigure" accessor="//@figures.0/@descriptors.0/@accessors.2"/>
+  <compartments name="ActuatorHil_node_configurationCompartment" figure="ActuatorFigure" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <compartments name="ActuatorAdditionalconfigurationCompartment" figure="ActuatorFigure" accessor="//@figures.0/@descriptors.1/@accessors.2"/>
+  <compartments name="FogNodeHil_node_configurationCompartment" figure="FogNodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.1"/>
+  <compartments name="FogNodeCreate_topicCompartment" figure="FogNodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.2"/>
+  <compartments name="FogNodeComponentCompartment" figure="FogNodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.3"/>
+  <compartments name="CloudNodeHil_node_configurationCompartment" figure="CloudNodeFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <compartments name="CloudNodeCreate_topicCompartment" figure="CloudNodeFigure" accessor="//@figures.0/@descriptors.3/@accessors.2"/>
+  <compartments name="CloudNodeComponentCompartment" figure="CloudNodeFigure" accessor="//@figures.0/@descriptors.3/@accessors.3"/>
+  <compartments name="DataDatasourceCompartment" figure="DataFigure" accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+  <compartments name="SPRuleCompartment" figure="SPFigure" accessor="//@figures.0/@descriptors.11/@accessors.1"/>
+  <compartments name="CEPRuleCompartment" figure="CEPFigure" accessor="//@figures.0/@descriptors.12/@accessors.1"/>
+  <compartments name="RuleGenerates_notificationCompartment" figure="RuleFigure" accessor="//@figures.0/@descriptors.15/@accessors.1"/>
+  <compartments name="ArduinoArduinoconfigurationCompartment" figure="ArduinoFigure" accessor="//@figures.0/@descriptors.27/@accessors.0"/>
+  <labels name="SensorLabel" figure="SensorFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ActuatorLabel" figure="ActuatorFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="FogNodeLabel" figure="FogNodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="CloudNodeLabel" figure="CloudNodeFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="AdditionalConfigurationLabel" figure="AdditionalConfigurationLabelFigure" elementIcon="false"/>
+  <labels name="CoordinatesLabel" figure="CoordinatesLabelFigure"/>
+  <labels name="DataLabel" figure="DataFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="TopicLabel" figure="TopicLabelFigure" elementIcon="false"/>
+  <labels name="SPLabel" figure="SPFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="CEPLabel" figure="CEPFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="NoSQLLabel" figure="NoSQLLabelFigure" elementIcon="false"/>
+  <labels name="RuleLabel" figure="RuleFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
+  <labels name="EmailNotificationLabel" figure="EmailNotificationLabelFigure" elementIcon="false"/>
+  <labels name="TopicNotificationLabel" figure="TopicNotificationLabelFigure" elementIcon="false"/>
+  <labels name="RedirectionConfigurationLabel" figure="RedirectionConfigurationLabelFigure" elementIcon="false"/>
+  <labels name="GenerationRangeLabel" figure="GenerationRangeLabelFigure" elementIcon="false"/>
+  <labels name="AleatoryLabel" figure="AleatoryFigure" accessor="//@figures.0/@descriptors.24/@accessors.0"/>
+  <labels name="CSVloadLabel" figure="CSVloadLabelFigure" elementIcon="false"/>
+  <labels name="ArduinoLabel" figure="ArduinoLabelFigure" elementIcon="false"/>
+  <labels name="RaspberryLabel" figure="RaspberryLabelFigure" elementIcon="false"/>
+  <labels name="UserDeviceLabel" figure="UserDeviceLabelFigure" elementIcon="false"/>
+  <labels name="ArduinoConfigurationLabel" figure="ArduinoConfigurationLabelFigure" elementIcon="false"/>
+  <labels name="InputLabel" figure="InputLabelFigure" elementIcon="false"/>
+  <labels name="NodeSuscribe_on_topicExternalLabel" figure="NodeSuscribe_on_topicExternalLabelFigure" elementIcon="false"/>
+  <labels name="NodePublish_on_topicExternalLabel" figure="NodePublish_on_topicExternalLabelFigure" elementIcon="false"/>
+  <labels name="EdgeNodeDataExternalLabel" figure="EdgeNodeDataExternalLabelFigure" elementIcon="false"/>
+  <labels name="ProcessNodeEdge_nodeExternalLabel" figure="ProcessNodeEdge_nodeExternalLabelFigure" elementIcon="false"/>
+  <labels name="ProcessNodeRedirectExternalLabel" figure="ProcessNodeRedirectExternalLabelFigure" elementIcon="false"/>
+  <labels name="RuleApply_toExternalLabel" figure="RuleApply_toExternalLabelFigure" elementIcon="false"/>
+  <labels name="TopicNotificationPublish_on_topicExternalLabel" figure="TopicNotificationPublish_on_topicExternalLabelFigure" elementIcon="false"/>
+  <labels name="RedirectionConfigurationTopicExternalLabel" figure="RedirectionConfigurationTopicExternalLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

@@ -1,0 +1,324 @@
+@gmf
+@namespace(uri="http://www.example.org/iOTMetaModel", prefix="iOTMetaModel")
+package iOTMetaModel;
+
+@gmf.diagram
+class Environment {
+	attr String name;
+	attr Float simulationSpeed = "1.0";
+	attr Integer numberOfMessages = "100";
+	val Node[*] node;
+	val Data[*] data;
+}
+
+@gmf.node(label="name")
+abstract class Node {
+	attr String name;
+	attr Integer ~id = "0";
+	val Coordinates coordinates;
+
+	@gmf.link(source.decoration="arrow", target.decoration="none", style="dash", color="255,93,0", width="3")
+	ref Topic[*] suscribe_on_topic;
+
+	@gmf.link(target.decoration="arrow", style="dash", color="255,93,0", width="3")
+	ref Topic[*] publish_on_topic;
+
+	@gmf.compartment(collapsible="false")
+	val HIL_Node hil_node_configuration;
+}
+
+abstract class EdgeNode extends Node {
+	attr Integer quantity = "1";
+
+	@gmf.compartment(collapsible="false")
+	val AdditionalConfiguration additionalconfiguration;
+
+	@gmf.link(target.decoration="arrow", style="dash", color="51,51,204", width="3")
+	ref Data data;
+}
+
+abstract class ProcessNode extends Node {
+
+	@gmf.link(target.decoration="arrow", style="dash", color="0,102,0", width="3")
+	ref EdgeNode[*] edge_node;
+
+	@gmf.link(target.decoration="arrow", color="255,0,236", width="3")
+	ref ProcessNode[*] redirect;
+	attr Integer redirectionTime = "0";
+
+	@gmf.compartment(collapsible="false")
+	val Topic[*] create_topic;
+	attr Size size = "XS";
+
+	@gmf.compartment(collapsible="false")
+	val Component[*] component;
+	attr BrokerType BrokerType = "Mosquitto";
+}
+
+@gmf.node(color="226,150,152", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/device.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/device.png", label.placement="internal", label.icon="true")
+class Sensor extends EdgeNode {
+	attr Float generation_speed = "1.0";
+}
+
+@gmf.node(color="226,150,152", tool.small.bundle="IOTMetaModel", label.placement="internal", tool.small.path="imagenes/Actuator.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/Actuator.png", label.icon="true")
+class Actuator extends EdgeNode {
+}
+
+enum Size {
+	XS = 0;
+	S = 1;
+	M = 2;
+	L = 3;
+	XL = 4;
+	XXL = 5;
+}
+
+enum BrokerType {
+	Mosquitto = 0;
+}
+
+@gmf.node(tool.small.bundle="IOTMetaModel", color="203,225,249", tool.small.path="imagenes/fog.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/fog.png", label.placement="internal")
+class FogNode extends ProcessNode {
+}
+
+@gmf.node(tool.small.bundle="IOTMetaModel", color="191,248,203", tool.small.path="imagenes/cloud.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/cloud.png", label.placement="internal")
+class CloudNode extends ProcessNode {
+	attr CloudType CloudType = "AWS";
+}
+
+enum CloudType {
+	AWS = 0;
+	Azure = 1;
+	Heroku = 2;
+	OpenShift = 3;
+	Undefined = 4;
+}
+
+@gmf.node(label="id", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/machineLearning.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/machine_learning.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/machine_learning.png", label.placement="external", label.icon="false")
+class AdditionalConfiguration {
+	attr Integer ~id = "0";
+}
+
+@gmf.node(label="name", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/xy.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/xy.png", label.icon="true", label.placement="external")
+class Coordinates {
+	attr String name;
+	attr Integer latitude;
+	attr Integer longitude;
+}
+
+@gmf.node(label="name", color="226,150,152", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/data.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/data.png", label.placement="internal", label.icon="true")
+class Data {
+	attr String name;
+	attr Integer ~id = "0";
+	attr DataType DataType = "INTEGER";
+
+	@gmf.compartment(collapsible="false")
+	val DataSource[1] datasource;
+}
+
+enum DataType {
+	INTEGER = 0;
+	STRING = 1;
+	BOOLEAN = 2;
+	FLOAT = 3;
+}
+
+@gmf.node(label="name", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/topic.svg", label.placement="external", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/topic.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/topic.png", label.icon="false")
+class Topic {
+	attr String name;
+	ref Data data;
+}
+
+@gmf.node(label="name", label.icon="true", label.placement="internal")
+abstract class Component {
+	attr String name;
+	attr Integer ~id = "0";
+}
+
+abstract class DataBase extends Component {
+	attr DataBaseProvider DataBaseProvider = "MongoDB";
+}
+
+abstract class ProcessEngine extends Component {
+	attr ProcessEngineProvider ProcessEngineProvider = "EsperTech";
+
+	@gmf.compartment(collapsible="false")
+	val Rule[*] rule;
+}
+
+enum DataBaseProvider {
+	MongoDB = 0;
+}
+
+enum ProcessEngineProvider {
+	EsperTech = 0;
+	WSO2 = 1;
+}
+
+@gmf.node(tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/wso2.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/wso2.png", label.placement="internal")
+class SP extends ProcessEngine {
+}
+
+@gmf.node(tool.small.bundle="IOTMetaModel", color="191,248,203", tool.small.path="imagenes/esper.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/esper.png", label.placement="internal")
+class CEP extends ProcessEngine {
+}
+
+@gmf.node(label="name", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/mongo.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/mongo.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/mongo.png", label.icon="false", label.placement="external")
+class NoSQL extends DataBase {
+}
+
+@gmf.node(label="eventType", color="191,248,203", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/rule.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/rule.png", label.placement="internal", label.icon="true")
+class Rule {
+
+	@gmf.link(target.decoration="arrow", style="dash", color="46,204,113", width="3")
+	ref Topic[1] apply_to;
+	attr Integer ~id = "0";
+	attr String eventType;
+	attr String rule;
+
+	@gmf.compartment(collapsible="false")
+	val Notification generates_notification;
+}
+
+@gmf.node(label="name", color="191,248,203", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/notification.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/notification.png", label.placement="external", label.icon="false")
+abstract class Notification {
+	attr String name;
+	attr String message;
+	attr String route;
+}
+
+@gmf.node(tool.small.bundle="IOTMetaModel", color="191,248,203", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/gmail.svg", tool.small.path="imagenes/gmail.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/gmail.png", label.placement="external")
+class EmailNotification extends Notification {
+	attr String destinyNotification;
+	attr String username;
+	attr String SMTPserver;
+	attr String password;
+}
+
+@gmf.node(figure="svg", color="191,248,203", svg.uri="platform:/plugin/IOTMetaModel/imagenes/notification.svg")
+class TopicNotification extends Notification {
+
+	@gmf.link(target.decoration="arrow", style="dash", color="255,93,0", width="3")
+	ref Topic[*] publish_on_topic;
+}
+
+@gmf.node(label="name", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/redirect.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/redirect.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/redirect.png", label.placement="external", label.icon="false")
+class RedirectionConfiguration extends AdditionalConfiguration {
+	attr String name;
+	ref ProcessNode[+] route_processnode;
+
+	@gmf.link(target.decoration="arrow", style="dash", color="255,93,0", width="3")
+	ref Topic[1] topic;
+}
+
+@gmf.node(label.placement="internal", label.icon="true")
+abstract class DataSource {
+	attr Integer ~id = "0";
+}
+
+@gmf.node(label="FileName")
+abstract class LoadFromFile extends DataSource {
+	attr String FileName;
+}
+
+@gmf.node(label="GenerationName", label.icon="true", label.placement="internal")
+abstract class DataGeneration extends DataSource {
+	attr String GenerationName;
+	val GenerationRange generationRange;
+}
+
+@gmf.node(label="id", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/range.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/range.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/range.png", label.placement="external", label.icon="false")
+class GenerationRange {
+	attr Integer ~id = "0";
+	attr Integer Lower;
+	attr Integer Upper;
+}
+
+@gmf.node(color="226,150,152", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/random.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/random.png")
+class Aleatory extends DataGeneration {
+}
+
+@gmf.node(figure="svg", color="226,150,152", svg.uri="platform:/plugin/IOTMetaModel/imagenes/csv.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/csv.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/csv.png", label.icon="false", label.placement="external")
+class CSVload extends LoadFromFile {
+}
+
+abstract class HIL_Node {
+	attr String IP;
+}
+
+@gmf.node(label="IP", figure="svg", color="226,150,152", svg.uri="platform:/plugin/IOTMetaModel/imagenes/arduino.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/arduino.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/arduino.png", label.icon="false", label.placement="external")
+class Arduino extends HIL_Node {
+	attr ArduinoModel arduinoModel = "Yun";
+
+	@gmf.compartment(collapsible="false")
+	val ArduinoConfiguration[+] arduinoconfiguration;
+}
+
+@gmf.node(label="IP", figure="svg", color="226,150,152", svg.uri="platform:/plugin/IOTMetaModel/imagenes/raspberry.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/raspberry.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/raspberry.png", label.icon="false", label.placement="external")
+class Raspberry extends HIL_Node {
+}
+
+@gmf.node(label="IP", figure="svg", color="226,150,152", svg.uri="platform:/plugin/IOTMetaModel/imagenes/userDevice.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/userDevice.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/userDevice.png", label.icon="false", label.placement="external")
+class UserDevice extends HIL_Node {
+}
+
+enum ArduinoModel {
+	AdafruitCircuitPlayground = 0;
+	BT = 1;
+	DuemilanoveOrDiecimila = 2;
+	Esplora = 3;
+	Ethernet = 4;
+	Fio = 5;
+	Gemma = 6;
+	Industrial101 = 7;
+	Leonardo = 8;
+	LeonardoETH = 9;
+	MegaADK = 10;
+	MegaOrMega2560 = 11;
+	Micro = 12;
+	Mini = 13;
+	NGOrOlder = 14;
+	Nano = 15;
+	ProOrProMini = 16;
+	RobotControl = 17;
+	RobotMotor = 18;
+	Uno = 19;
+	UnoMini = 20;
+	UnoWiFi = 21;
+	Yun = 22;
+	YunMini = 23;
+	LilyPadArduino = 24;
+	LilyPadArduinoUSB = 25;
+	LininoOne = 26;
+}
+
+enum ArduinoDeviceType {
+	Thermistor = 0;
+	RotatoryPotentiometer = 1;
+	TiltSensor = 2;
+	Photoresistor = 3;
+	Accelerometer = 4;
+	PushbuttonModule = 5;
+	LinearPotentiometer = 6;
+	TouchSensor = 7;
+	JoystickModule = 8;
+	Gyroscope = 9;
+	HallSensor = 10;
+	LED = 11;
+	HighPowerLED = 12;
+	Mosfet = 13;
+	Relay = 14;
+}
+
+@gmf.node(label="deviceType", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/arduino.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/arduino.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/arduino.png", label.icon="false", label.placement="external")
+class ArduinoConfiguration {
+	attr ArduinoDeviceType deviceType = "Thermistor";
+	attr Integer output;
+	val Input[*] input;
+}
+
+@gmf.node(label="input", figure="svg", svg.uri="platform:/plugin/IOTMetaModel/imagenes/telegram.svg", tool.small.bundle="IOTMetaModel", tool.small.path="imagenes/telegram.png", tool.large.bundle="IOTMetaModel", tool.large.path="imagenes/telegram.png", label.placement="external", label.icon="false")
+class Input {
+	attr Integer input;
+}
+

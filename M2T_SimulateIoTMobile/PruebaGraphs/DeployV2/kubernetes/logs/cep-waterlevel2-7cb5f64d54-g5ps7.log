@@ -1,0 +1,43 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/WaterLevel2-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-waterlevel2:1886, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-waterlevel2:1886
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "127" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "60" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "193" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "89" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "238" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "50" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "25" } |From topic: WaterLevel
+ESPER | Publishing data: The water level is low | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "96" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "218" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "216" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "110" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "203" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "211" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "94" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "89" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "91" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "213" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "68" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "173" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "247" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "55" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "218" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "131" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "207" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "167" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "166" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "137" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "91" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "239" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "203" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "146" } |From topic: WaterLevel

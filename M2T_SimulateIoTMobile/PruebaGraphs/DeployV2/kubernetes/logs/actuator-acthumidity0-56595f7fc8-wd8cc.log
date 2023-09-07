@@ -1,0 +1,76 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.06286055323182952652.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+Sep 07, 2023 4:21:28 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "206" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "158" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "201" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "2" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "215" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "231" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "221" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "65" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "166" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "44" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "151" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "217" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "162" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "183" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "179" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "65" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "198" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "68" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "187" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "227" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "148" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "2" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "15" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "173" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "229" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "119" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "58" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "116" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "73" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "130" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "188" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "76" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "189" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "163" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "217" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "77" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "110" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "62" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "118" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "113" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "230" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "244" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "142" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "7" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "213" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "214" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "154" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "132" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "123" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "66" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "179" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "6" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "162" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "117" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "31" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "5" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "19" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "56" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "55" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "12" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "109" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "125" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "73" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "151" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "52" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_5788620 | Receive data: { "value" : "30" } | Doing following action in consequence: actuando!

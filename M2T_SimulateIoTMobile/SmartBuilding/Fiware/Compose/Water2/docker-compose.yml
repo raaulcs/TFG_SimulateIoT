@@ -1,0 +1,122 @@
+version: "3.5"
+services:
+  # Orion is the context broker
+  orion-water2:
+    image: fiware/orion:2.0.0
+    hostname: orion-water2
+    container_name: fiware-orion
+    depends_on:
+      - mongo-db-water2
+    networks:
+      - my-network
+    expose:
+      - "1026"
+    ports:
+      - "8082:1026"
+    command: -dbhost mongo-db-water2 -logLevel DEBUG
+    healthcheck:
+      test: curl --fail -s http://orion:1026/version || exit 1
+
+
+  # JSON IoTAgent
+  iot-agent-water2:
+    image: fiware/iotagent-json
+    hostname: iot-agent-water2
+    container_name: fiware-iot-agent
+    depends_on:
+      - mongo-db-water2
+      - mosquitto-water2
+    networks:
+      - my-network
+    expose:
+      - "4041"
+    ports:
+      - "4041:4041"
+    environment:
+      - IOTA_CB_HOST=orion-water2
+      - IOTA_CB_PORT=1026
+      - IOTA_NORTH_PORT=4041
+      - IOTA_LOG_LEVEL=DEBUG # The log level of the IoT Agent
+      - IOTA_TIMESTAMP=true # Supply timestamp information with each measurement
+      - IOTA_CB_NGSI_VERSION=v2 # use NGSIv2 when sending updates for active attributes
+      - IOTA_AUTOCAST=true # Ensure Ultralight number values are read as numbers not strings
+      - IOTA_REGISTRY_TYPE=mongodb
+      - IOTA_MONGO_HOST=mongo-db-water2
+      - IOTA_MONGO_PORT=27017
+      - IOTA_MONGO_DB=iotagent-json
+      - IOTA_MQTT_HOST=mosquitto-water2 # The host name of the MQTT Broker
+      - IOTA_MQTT_PORT=1883 # The port the MQTT Broker is listening on to receive topics
+      - IOTA_PROVIDER_URL=http://iot-agent:4041
+
+
+  # Database
+  mongo-db-water2:
+    image: mongo:3.6
+    hostname: mongo-db-water2
+    container_name: db-mongo
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"
+    networks:
+      - my-network
+    command: --bind_ip_all --smallfiles
+    volumes:
+      - mongo-db:/data
+
+  perseo-core-water2:
+    image: fiware/perseo-core
+    environment:
+      - PERSEO_FE_URL=http://perseo-fe-water2:9090
+      - MAX_AGE=6000
+    networks:
+      - my-network
+    depends_on:
+      - mongo-db-water2
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+
+  perseo-fe-water2:
+    image: fiware/perseo
+    networks:
+      - my-network
+    ports:
+      - 9090:9090
+    depends_on:
+      - perseo-core-water2
+    environment:
+      - PERSEO_MONGO_ENDPOINT=mongo-db-water2
+      - PERSEO_CORE_URL=http://perseo-core-water2:8080
+      - PERSEO_LOG_LEVEL=debug
+      - PERSEO_ORION_URL=http://orion-water2:1026/
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  # Other services
+  mosquitto-water2:
+    image: eclipse-mosquitto
+    hostname: mosquitto-water2
+    container_name: mosquitto
+    expose:
+      - "1883"
+      - "9001"
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    external:
+      name: my-network
+
+volumes:
+  mongo-db: ~

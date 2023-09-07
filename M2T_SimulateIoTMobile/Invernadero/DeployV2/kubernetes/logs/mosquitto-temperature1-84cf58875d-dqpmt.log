@@ -1,0 +1,61 @@
+1692614275: mosquitto version 2.0.15 starting
+1692614275: Config loaded from /mosquitto/config/mosquitto.conf.
+1692614275: Opening ipv4 listen socket on port 1883.
+1692614275: Opening ipv6 listen socket on port 1883.
+1692614275: mosquitto version 2.0.15 running
+1692614276: New connection from 10.103.1.134:42808 on port 1883.
+1692614276: New client connected from 10.103.1.134:42808 as sensTemperature_1_3313770 (p2, c1, k30).
+1692614276: New connection from 10.103.1.198:57136 on port 1883.
+1692614276: New client connected from 10.103.1.198:57136 as Temperature_1 (p2, c1, k30).
+1692614277: New connection from 10.103.0.137:59320 on port 1883.
+1692614277: New client connected from 10.103.0.137:59320 as Temperature_EsperComponent (p2, c1, k30).
+1692614281: Client Temperature_EsperComponent closed its connection.
+1692614283: New connection from 10.103.0.215:38608 on port 1883.
+1692614283: New connection from 10.103.0.137:35578 on port 1883.
+1692614283: New client connected from 10.103.0.137:35578 as Temperature_EsperComponent (p2, c1, k30).
+1692614283: New client connected from 10.103.0.215:38608 as actTemperature_1_1454161 (p2, c1, k30).
+1692614288: Client Temperature_EsperComponent closed its connection.
+1692614289: New connection from 10.103.0.137:59746 on port 1883.
+1692614289: New client connected from 10.103.0.137:59746 as Temperature_EsperComponent (p2, c1, k30).
+1692614293: Client Temperature_EsperComponent closed its connection.
+1692614295: New connection from 10.103.0.137:59756 on port 1883.
+1692614295: New client connected from 10.103.0.137:59756 as Temperature_EsperComponent (p2, c1, k30).
+1692614299: Client Temperature_EsperComponent closed its connection.
+1692614301: New connection from 10.103.0.137:50830 on port 1883.
+1692614301: New client connected from 10.103.0.137:50830 as Temperature_EsperComponent (p2, c1, k30).
+1692614305: Client Temperature_EsperComponent closed its connection.
+1692614307: New connection from 10.103.0.137:55816 on port 1883.
+1692614307: New client connected from 10.103.0.137:55816 as Temperature_EsperComponent (p2, c1, k30).
+1692614311: Client Temperature_EsperComponent closed its connection.
+1692614313: New connection from 10.103.0.137:55828 on port 1883.
+1692614313: New client connected from 10.103.0.137:55828 as Temperature_EsperComponent (p2, c1, k30).
+1692614317: Client Temperature_EsperComponent closed its connection.
+1692614319: New connection from 10.103.0.137:46706 on port 1883.
+1692614319: New client connected from 10.103.0.137:46706 as Temperature_EsperComponent (p2, c1, k30).
+1692614323: Client Temperature_EsperComponent closed its connection.
+1692614325: New connection from 10.103.0.137:46714 on port 1883.
+1692614325: New client connected from 10.103.0.137:46714 as Temperature_EsperComponent (p2, c1, k30).
+1692614330: Client Temperature_EsperComponent closed its connection.
+1692614331: New connection from 10.103.0.137:56526 on port 1883.
+1692614331: New client connected from 10.103.0.137:56526 as Temperature_EsperComponent (p2, c1, k30).
+1692614335: Client Temperature_EsperComponent closed its connection.
+1692614337: New connection from 10.103.0.137:36848 on port 1883.
+1692614337: New client connected from 10.103.0.137:36848 as Temperature_EsperComponent (p2, c1, k30).
+1692614341: Client Temperature_EsperComponent closed its connection.
+1692614343: New connection from 10.103.0.137:36852 on port 1883.
+1692614343: New client connected from 10.103.0.137:36852 as Temperature_EsperComponent (p2, c1, k30).
+1692614347: Client Temperature_EsperComponent closed its connection.
+1692614349: New connection from 10.103.0.137:49952 on port 1883.
+1692614349: New client connected from 10.103.0.137:49952 as Temperature_EsperComponent (p2, c1, k30).
+1692614353: Client Temperature_EsperComponent closed its connection.
+1692614355: New connection from 10.103.0.137:49954 on port 1883.
+1692614355: New client connected from 10.103.0.137:49954 as Temperature_EsperComponent (p2, c1, k30).
+1692614359: Client Temperature_EsperComponent closed its connection.
+1692614361: New connection from 10.103.0.137:57378 on port 1883.
+1692614361: New client connected from 10.103.0.137:57378 as Temperature_EsperComponent (p2, c1, k30).
+1692614365: Client Temperature_EsperComponent closed its connection.
+1692614367: New connection from 10.103.0.137:53754 on port 1883.
+1692614367: New client connected from 10.103.0.137:53754 as Temperature_EsperComponent (p2, c1, k30).
+1692614371: Client Temperature_EsperComponent closed its connection.
+1692614373: New connection from 10.103.0.137:53756 on port 1883.
+1692614373: New client connected from 10.103.0.137:53756 as Temperature_EsperComponent (p2, c1, k30).

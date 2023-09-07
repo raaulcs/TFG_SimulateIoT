@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: sensor-senspresence0
+  name: sensor-senspresence0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: sensor-senspresence0
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: sensor-senspresence0
+    spec:
+      containers:
+        - image: raaulcs/tfg:sensor-senspresence0
+          name: sensor-senspresence0
+          resources: {}
+      restartPolicy: Always
+status: {}

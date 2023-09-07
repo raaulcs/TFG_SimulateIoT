@@ -1,0 +1,25 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.04981186306916594946.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+Aug 22, 2023 9:41:31 AM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG Humidity_0 | Received data: { "value" : "186" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "94" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "21" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "30" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "0" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "58" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "3" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "77" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "102" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "18" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "247" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "120" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "64" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "14" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "41" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "119" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "168" } |From topic: Humidity

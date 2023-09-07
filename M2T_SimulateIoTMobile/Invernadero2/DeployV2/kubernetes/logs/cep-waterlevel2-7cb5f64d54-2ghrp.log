@@ -1,0 +1,26 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/WaterLevel2-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "126" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "223" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "206" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "156" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "171" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "182" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "181" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "156" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "139" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "232" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "192" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "65" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "34" } |From topic: WaterLevel
+ESPER | Publishing data: The water level is low | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "42" } |From topic: WaterLevel
+ESPER | Publishing data: The water level is low | To topic: Humidity

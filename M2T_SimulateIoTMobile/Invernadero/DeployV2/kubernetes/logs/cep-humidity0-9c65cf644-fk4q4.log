@@ -1,0 +1,51 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Humidity0-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER Humidity_EsperComponent | Received data: { "value" : "55" } |From topic: Humidity
+ESPER Humidity_EsperComponent | Received data: { "value" : "90" } |From topic: Humidity
+ESPER Humidity_EsperComponent | Received data: { "value" : "29" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "8" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "34" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "92" } |From topic: Humidity
+ESPER Humidity_EsperComponent | Received data: { "value" : "32" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "22" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "35" } |From topic: Humidity
+ESPER | Publishing data: Humidity is decreasing, it is below 50%. | To topic: Humidity
+ESPER Humidity_EsperComponent | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+PROBLEMs reconnectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-humidity0:1884
+Resubscribing to topics...
+ESPER Humidity_EsperComponent | Received data: { "value" : "60" } |From topic: Humidity
+ESPER Humidity_EsperComponent | Received data: { "value" : "67" } |From topic: Humidity

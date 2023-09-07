@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: mosquitto-gas3
+  name: mosquitto-gas3
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      name: "1887"
+      port: 1887
+      targetPort: 1883
+  selector:
+    io.kompose.service: mosquitto-gas3
+status:
+  loadBalancer: {}
+

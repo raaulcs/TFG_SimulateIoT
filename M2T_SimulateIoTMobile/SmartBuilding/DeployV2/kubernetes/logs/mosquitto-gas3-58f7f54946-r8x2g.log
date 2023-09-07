@@ -1,0 +1,13 @@
+1694024039: mosquitto version 2.0.15 starting
+1694024039: Config loaded from /mosquitto/config/mosquitto.conf.
+1694024039: Opening ipv4 listen socket on port 1883.
+1694024039: Opening ipv6 listen socket on port 1883.
+1694024039: mosquitto version 2.0.15 running
+1694024156: New connection from 10.244.2.169:58064 on port 1883.
+1694024156: New client connected from 10.244.2.169:58064 as Gas_3 (p2, c1, k30).
+1694024199: New connection from 10.244.2.172:44152 on port 1883.
+1694024199: New client connected from 10.244.2.172:44152 as Gas_EsperComponent (p2, c1, k30).
+1694024342: New connection from 10.244.2.180:47342 on port 1883.
+1694024342: New client connected from 10.244.2.180:47342 as sensGas_3_9481689 (p2, c1, k30).
+1694024429: New connection from 10.244.2.184:40520 on port 1883.
+1694024429: New client connected from 10.244.2.184:40520 as actGas_3_5807761 (p2, c1, k30).

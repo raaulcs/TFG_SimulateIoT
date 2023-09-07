@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: water2
+  name: water2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: water2
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: water2
+    spec:
+      containers:
+        - image: raaulcs/tfg:water2
+          name: water2
+          resources: {}
+      restartPolicy: Always
+status: {}

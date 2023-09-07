@@ -1,0 +1,35 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Water2-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-water2:1886, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-water2:1886, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-water2:1886
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" com.espertech.esper.client.EPStatementException: Implicit conversion from datatype 'Double' to 'Integer' for property 'value' is not allowed (strict filter type coercion) [select value from EsperClient.EventWater where value < 30.5]
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.compile(StatementLifecycleSvcImpl.java:1065)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createStopped(StatementLifecycleSvcImpl.java:299)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createStoppedAssignName(StatementLifecycleSvcImpl.java:206)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createAndStart(StatementLifecycleSvcImpl.java:155)
+	at com.espertech.esper.core.service.EPAdministratorImpl.createEPLStmt(EPAdministratorImpl.java:105)
+	at com.espertech.esper.core.service.EPAdministratorImpl.createEPL(EPAdministratorImpl.java:63)
+	at EsperClient.EsperEPL.run(EsperEPL.java:33)
+	at EsperClient.EsperComponent.<init>(EsperComponent.java:17)
+	at EsperClient.Main.main(Main.java:76)
+Caused by: com.espertech.esper.epl.expression.core.ExprValidationException: Implicit conversion from datatype 'Double' to 'Integer' for property 'value' is not allowed (strict filter type coercion)
+	at com.espertech.esper.filter.FilterSpecCompilerMakeParamUtil.throwConversionError(FilterSpecCompilerMakeParamUtil.java:579)
+	at com.espertech.esper.filter.FilterSpecCompilerMakeParamUtil.handleConstantsCoercion(FilterSpecCompilerMakeParamUtil.java:597)
+	at com.espertech.esper.filter.FilterSpecCompilerMakeParamUtil.handleEqualsAndRelOp(FilterSpecCompilerMakeParamUtil.java:446)
+	at com.espertech.esper.filter.FilterSpecCompilerMakeParamUtil.makeFilterParam(FilterSpecCompilerMakeParamUtil.java:59)
+	at com.espertech.esper.filter.FilterSpecCompilerPlanner.decomposePopulateConsolidate(FilterSpecCompilerPlanner.java:172)
+	at com.espertech.esper.filter.FilterSpecCompilerPlanner.planFilterParameters(FilterSpecCompilerPlanner.java:49)
+	at com.espertech.esper.filter.FilterSpecCompiler.buildNoStmtCtx(FilterSpecCompiler.java:146)
+	at com.espertech.esper.filter.FilterSpecCompiler.build(FilterSpecCompiler.java:115)
+	at com.espertech.esper.filter.FilterSpecCompiler.makeFilterSpec(FilterSpecCompiler.java:99)
+	at com.espertech.esper.core.service.speccompiled.StreamSpecCompiler.compile(StreamSpecCompiler.java:145)
+	at com.espertech.esper.core.service.speccompiled.StreamSpecCompiler.compile(StreamSpecCompiler.java:84)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.compile(StatementLifecycleSvcImpl.java:1057)
+	... 8 more

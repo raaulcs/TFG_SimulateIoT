@@ -1,0 +1,58 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.03698926772973989701.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-temperature1:1885
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "13" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "21" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "38" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "41" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "23" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "15" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "50" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "16" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "13" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "17" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "20" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "33" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "16" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "47" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "37" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "44" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "47" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "11" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "13" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "11" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "38" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "46" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "14" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "13" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "32" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "37" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "28" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "30" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "28" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "28" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "43" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "24" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "45" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "17" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "39" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "15" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "39" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "28" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "32" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "10" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "38" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "50" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "48" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "41" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "20" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "35" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "49" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "46" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "40" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "41" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "11" } | To topic Temperature
+DEVICE sensTemperature_1_3219559 | Publishing data = { "value" : "7" } | To topic Temperature

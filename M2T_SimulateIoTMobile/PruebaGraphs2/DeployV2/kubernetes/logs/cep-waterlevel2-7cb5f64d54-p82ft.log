@@ -1,0 +1,31 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/WaterLevel2-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-waterlevel2:1886, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-waterlevel2:1886
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "106" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "93" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "248" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "100" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "4" } |From topic: WaterLevel
+ESPER | Publishing data: The water level is low | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "176" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "181" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "136" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "59" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "173" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "3" } |From topic: WaterLevel
+ESPER | Publishing data: The water level is low | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "197" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "111" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "46" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "214" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "52" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "118" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "100" } |From topic: WaterLevel

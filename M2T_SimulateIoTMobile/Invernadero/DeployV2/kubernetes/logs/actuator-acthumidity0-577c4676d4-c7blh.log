@@ -1,0 +1,43 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.010608982271577945923.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "8" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: Humidity is decreasing, it is below 50%. | Doing following action in consequence: actuando!
+Aug 22, 2023 6:04:30 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "29" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "93" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "100" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "49" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "34" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: Humidity is decreasing, it is below 50%. | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "85" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "4" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "42" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "39" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "25" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "92" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "32" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: Humidity is decreasing, it is below 50%. | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "78" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "53" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "0" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "7" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "22" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: Humidity is decreasing, it is below 50%. | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "56" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "68" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "66" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "19" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "30" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "35" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: Humidity is decreasing, it is below 50%. | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "18" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "42" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "50" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "97" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_1427279 | Receive data: { "value" : "80" } | Doing following action in consequence: actuando!

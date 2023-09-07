@@ -1,0 +1,29 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.010503086071319022974.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-humidity0:1884
+Sep 07, 2023 4:24:20 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "126" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "93" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "103" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "112" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "200" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "195" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "139" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "233" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "25" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "243" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "172" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "103" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "213" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "189" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "195" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "116" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "116" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "41" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "211" } | Doing following action in consequence: actuando!
+ACTUATORactHumidity_0_4213495 | Receive data: { "value" : "28" } | Doing following action in consequence: actuando!

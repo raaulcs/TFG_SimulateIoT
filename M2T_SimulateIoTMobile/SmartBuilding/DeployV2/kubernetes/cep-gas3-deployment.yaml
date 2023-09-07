@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: cep-gas3
+  name: cep-gas3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cep-gas3
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: cep-gas3
+    spec:
+      containers:
+        - image: raaulcs/tfg:esper-gas3
+          name: cep-gas3
+          resources: {}
+      restartPolicy: Always
+status: {}

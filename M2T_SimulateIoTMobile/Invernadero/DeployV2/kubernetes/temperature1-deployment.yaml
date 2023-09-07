@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: temperature1
+  name: temperature1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: temperature1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: temperature1
+    spec:
+      containers:
+        - image: raaulcs/tfg:temperature1
+          name: temperature1
+          resources: {}
+      restartPolicy: Always
+status: {}

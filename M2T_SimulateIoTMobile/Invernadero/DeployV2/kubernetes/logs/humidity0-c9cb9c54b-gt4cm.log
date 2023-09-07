@@ -1,0 +1,113 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.05777111741621996291.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-humidity0:1884
+FOG Humidity_0 | Received data: { "value" : "16" } |From topic: Humidity
+Aug 21, 2023 11:49:16 AM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG Humidity_0 | Received data: { "value" : "27" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "29" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "44" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "68" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "6" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "81" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "20" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "42" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "94" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "71" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "78" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "99" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "82" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "32" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "39" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "3" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "31" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "64" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "34" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "93" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "1" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "4" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "92" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "53" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "59" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "50" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "84" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "97" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "15" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "26" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "73" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "73" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "78" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "65" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "22" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "26" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "11" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "37" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "55" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "98" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "19" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "91" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "63" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "12" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "93" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "49" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "52" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "2" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "36" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "16" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "6" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "52" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "97" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "32" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "12" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "43" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "5" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "26" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "69" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "84" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "62" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "23" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "88" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "21" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "25" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "18" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "75" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "52" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "93" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "16" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "25" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "74" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "66" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "19" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "72" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "69" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "27" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "71" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "74" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "43" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "62" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "79" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "22" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "36" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "20" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "51" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "59" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "60" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "25" } |From topic: Humidity
+FOG Humidity_0 | Received data: Humidity is decreasing, it is below 50%. |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "79" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "30" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "42" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "80" } |From topic: Humidity
+FOG Humidity_0 | Received data: { "value" : "96" } |From topic: Humidity

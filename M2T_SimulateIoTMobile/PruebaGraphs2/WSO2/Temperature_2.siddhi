@@ -1,0 +1,13 @@
+
+@App:name("TemperatureWSO2")
+
+@source(type='mqtt', url= 'fogIP',topic='org.eclipse.emf.ecore.impl.DynamicEObjectImpl@5cbd1f83 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@504fe0f8 (name: Topic) (instanceClassName: null) (abstract: false, interface: false))', @map(type='json'))
+define stream SweetProductionStream (value int);
+
+@sink(type='mqtt', url= 'fogIP',topic='Rule_org.eclipse.emf.ecore.impl.DynamicEObjectImpl@5cbd1f83 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@504fe0f8 (name: Topic) (instanceClassName: null) (abstract: false, interface: false))', @map(type='text', @payload("""{ "value" : "{{value}}", "topic" : "actuatorradiador", "route" : [ "tcp://158.49.245.181:1883", "tcp://158.49.245.$
+define stream LowProductionAlertStream (value int);
+
+@info(name='query1')
+from SweetProductionStream [select value from EsperClient.EventTemperatureHigh where value > 25]
+select value
+insert into LowProductionAlertStream;

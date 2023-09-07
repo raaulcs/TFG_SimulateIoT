@@ -1,0 +1,123 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.05473391844967125794.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-brightness1:1885
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "12" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "56" } | Doing following action in consequence: actuando!
+Sep 06, 2023 7:48:24 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "44" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "43" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "79" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "81" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "36" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "20" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "97" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "22" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "50" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "30" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "23" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "73" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "31" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "36" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "60" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "67" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "58" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "33" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "65" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "13" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "99" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "16" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "96" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "7" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "52" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "89" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "42" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "18" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "57" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "100" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "19" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "79" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "6" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "63" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "4" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "46" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "67" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "94" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "54" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "76" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "48" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "45" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "31" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "75" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "47" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "83" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "47" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "53" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "37" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "25" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "42" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "59" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "62" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "72" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "2" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "39" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "93" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "64" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "13" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "76" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "48" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "64" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "84" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "99" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "27" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "4" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "5" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "53" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "96" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "88" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "36" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "23" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "48" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "13" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "36" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "27" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "98" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "63" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "17" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "23" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "22" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "22" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "33" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "22" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "85" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "82" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "49" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "93" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "94" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "9" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "28" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: The brightness is lower than 60%, lights on! | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "13" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "50" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "42" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "3" } | Doing following action in consequence: actuando!
+ACTUATORactBrightness_1_6271770 | Receive data: { "value" : "49" } | Doing following action in consequence: actuando!

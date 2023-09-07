@@ -1,0 +1,61 @@
+1692614251: mosquitto version 2.0.15 starting
+1692614251: Config loaded from /mosquitto/config/mosquitto.conf.
+1692614251: Opening ipv4 listen socket on port 1883.
+1692614251: Opening ipv6 listen socket on port 1883.
+1692614251: mosquitto version 2.0.15 running
+1692614260: New connection from 10.103.0.4:40462 on port 1883.
+1692614260: New client connected from 10.103.0.4:40462 as Humidity_EsperComponent (p2, c1, k30).
+1692614262: New connection from 10.103.1.133:47420 on port 1883.
+1692614262: New client connected from 10.103.1.133:47420 as sensHumidity_0_8319120 (p2, c1, k30).
+1692614264: New connection from 10.103.0.68:43078 on port 1883.
+1692614264: New client connected from 10.103.0.68:43078 as Humidity_0 (p2, c1, k30).
+1692614267: Client Humidity_EsperComponent closed its connection.
+1692614269: New connection from 10.103.0.4:37592 on port 1883.
+1692614269: New client connected from 10.103.0.4:37592 as Humidity_EsperComponent (p2, c1, k30).
+1692614272: Client Humidity_EsperComponent closed its connection.
+1692614275: New connection from 10.103.0.4:34026 on port 1883.
+1692614275: New client connected from 10.103.0.4:34026 as Humidity_EsperComponent (p2, c1, k30).
+1692614278: Client Humidity_EsperComponent closed its connection.
+1692614281: New connection from 10.103.0.4:33618 on port 1883.
+1692614281: New client connected from 10.103.0.4:33618 as Humidity_EsperComponent (p2, c1, k30).
+1692614284: Client Humidity_EsperComponent closed its connection.
+1692614286: New connection from 10.103.0.214:43018 on port 1883.
+1692614286: New client connected from 10.103.0.214:43018 as actHumidity_0_6955614 (p2, c1, k30).
+1692614287: New connection from 10.103.0.4:33628 on port 1883.
+1692614287: New client connected from 10.103.0.4:33628 as Humidity_EsperComponent (p2, c1, k30).
+1692614291: Client Humidity_EsperComponent closed its connection.
+1692614293: New connection from 10.103.0.4:58622 on port 1883.
+1692614293: New client connected from 10.103.0.4:58622 as Humidity_EsperComponent (p2, c1, k30).
+1692614297: Client Humidity_EsperComponent closed its connection.
+1692614299: New connection from 10.103.0.4:58636 on port 1883.
+1692614299: New client connected from 10.103.0.4:58636 as Humidity_EsperComponent (p2, c1, k30).
+1692614302: Client Humidity_EsperComponent closed its connection.
+1692614305: New connection from 10.103.0.4:42426 on port 1883.
+1692614305: New client connected from 10.103.0.4:42426 as Humidity_EsperComponent (p2, c1, k30).
+1692614309: Client Humidity_EsperComponent closed its connection.
+1692614311: New connection from 10.103.0.4:57306 on port 1883.
+1692614311: New client connected from 10.103.0.4:57306 as Humidity_EsperComponent (p2, c1, k30).
+1692614314: Client Humidity_EsperComponent closed its connection.
+1692614317: New connection from 10.103.0.4:57312 on port 1883.
+1692614317: New client connected from 10.103.0.4:57312 as Humidity_EsperComponent (p2, c1, k30).
+1692614321: Client Humidity_EsperComponent closed its connection.
+1692614323: New connection from 10.103.0.4:46110 on port 1883.
+1692614323: New client connected from 10.103.0.4:46110 as Humidity_EsperComponent (p2, c1, k30).
+1692614326: Client Humidity_EsperComponent closed its connection.
+1692614329: New connection from 10.103.0.4:46126 on port 1883.
+1692614329: New client connected from 10.103.0.4:46126 as Humidity_EsperComponent (p2, c1, k30).
+1692614332: Client Humidity_EsperComponent closed its connection.
+1692614335: New connection from 10.103.0.4:54244 on port 1883.
+1692614335: New client connected from 10.103.0.4:54244 as Humidity_EsperComponent (p2, c1, k30).
+1692614338: Client Humidity_EsperComponent closed its connection.
+1692614341: New connection from 10.103.0.4:41470 on port 1883.
+1692614341: New client connected from 10.103.0.4:41470 as Humidity_EsperComponent (p2, c1, k30).
+1692614344: Client Humidity_EsperComponent closed its connection.
+1692614347: New connection from 10.103.0.4:41480 on port 1883.
+1692614347: New client connected from 10.103.0.4:41480 as Humidity_EsperComponent (p2, c1, k30).
+1692614351: Client Humidity_EsperComponent closed its connection.
+1692614353: New connection from 10.103.0.4:49816 on port 1883.
+1692614353: New client connected from 10.103.0.4:49816 as Humidity_EsperComponent (p2, c1, k30).
+1692614357: Client Humidity_EsperComponent closed its connection.
+1692614359: New connection from 10.103.0.4:49826 on port 1883.
+1692614359: New client connected from 10.103.0.4:49826 as Humidity_EsperComponent (p2, c1, k30).

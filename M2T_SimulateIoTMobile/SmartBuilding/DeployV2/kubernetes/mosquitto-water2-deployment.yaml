@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: mosquitto-water2
+  name: mosquitto-water2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: mosquitto-water2
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: mosquitto-water2
+    spec:
+      containers:
+        - image: raaulcs/tfg:eclipse-mosquitto-configured
+          name: mosquitto-water2
+          ports:
+            - containerPort: 1883
+          resources: {}
+      restartPolicy: Always
+status: {}
+

@@ -1,0 +1,116 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.06335724005852211051.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-humidity0:1884
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "179" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "113" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "85" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "95" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "235" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "83" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "55" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "41" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "157" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "123" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "196" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "10" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "65" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "82" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "61" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "43" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "55" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "187" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "101" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "164" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "20" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "160" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "233" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "234" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "174" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "58" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "10" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "104" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "67" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "169" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "89" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "182" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "191" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "63" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "111" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "55" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "62" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "143" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "227" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "62" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "8" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "82" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "231" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "229" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "229" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "41" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "130" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "129" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "205" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "55" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "32" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "140" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "247" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "13" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "92" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "238" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "219" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "217" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "85" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "187" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "219" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "49" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "31" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "230" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "124" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "208" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "239" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "90" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "247" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "33" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "90" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "221" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "11" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "244" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "244" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "61" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "96" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "110" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "239" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "240" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "183" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "45" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "216" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "202" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "191" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "127" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "190" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "23" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "223" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "181" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "134" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "71" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "87" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "182" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "158" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "193" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "162" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "115" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "130" } | To topic Humidity
+DEVICE sensHumidity_0_9771793 | Publishing data = { "value" : "201" } | To topic Humidity
+Aug 22, 2023 5:55:35 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready

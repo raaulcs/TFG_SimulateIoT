@@ -1,0 +1,28 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Humidity0-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-humidity0:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-humidity0:1884
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" com.espertech.esper.client.EPStatementException: Failed to resolve event type: Event type or class named 'EsperClient.Humidity' was not found [select value from EsperClient.Humidity where value < 50]
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.compile(StatementLifecycleSvcImpl.java:1065)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createStopped(StatementLifecycleSvcImpl.java:299)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createStoppedAssignName(StatementLifecycleSvcImpl.java:206)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.createAndStart(StatementLifecycleSvcImpl.java:155)
+	at com.espertech.esper.core.service.EPAdministratorImpl.createEPLStmt(EPAdministratorImpl.java:105)
+	at com.espertech.esper.core.service.EPAdministratorImpl.createEPL(EPAdministratorImpl.java:63)
+	at EsperClient.EsperEPL.run(EsperEPL.java:33)
+	at EsperClient.EsperComponent.<init>(EsperComponent.java:17)
+	at EsperClient.Main.main(Main.java:76)
+Caused by: com.espertech.esper.epl.expression.core.ExprValidationException: Failed to resolve event type: Event type or class named 'EsperClient.Humidity' was not found
+	at com.espertech.esper.core.service.speccompiled.StreamSpecCompiler.resolveType(StreamSpecCompiler.java:212)
+	at com.espertech.esper.core.service.speccompiled.StreamSpecCompiler.compile(StreamSpecCompiler.java:135)
+	at com.espertech.esper.core.service.speccompiled.StreamSpecCompiler.compile(StreamSpecCompiler.java:84)
+	at com.espertech.esper.core.service.StatementLifecycleSvcImpl.compile(StatementLifecycleSvcImpl.java:1057)
+	... 8 more

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: brightness1
+  name: brightness1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: brightness1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: brightness1
+    spec:
+      containers:
+        - image: raaulcs/tfg:brightness1
+          name: brightness1
+          resources: {}
+      restartPolicy: Always
+status: {}

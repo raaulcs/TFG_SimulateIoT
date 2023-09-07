@@ -1,0 +1,28 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.016123173180716764803.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "53" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "212" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "237" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "106" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "93" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "248" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "100" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "4" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "176" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "181" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "136" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "59" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "173" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "3" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "197" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "111" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "46" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "214" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "52" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "118" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "100" } | To topic WaterLevel
+DEVICE sensWaterLevel_2_9182729 | Publishing data = { "value" : "71" } | To topic WaterLevel

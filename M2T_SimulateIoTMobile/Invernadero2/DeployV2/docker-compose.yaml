@@ -1,0 +1,189 @@
+version: "3"
+services:
+  #START Process Node Humidity0 environment configuration
+  humidity0:
+    image: localhost:5000/humidity0
+    container_name: humidity0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Humidity0"
+
+  mosquitto-humidity0:
+    image: eclipse-mosquitto
+    container_name: mosquitto-humidity0
+    ports:
+      - "1884:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Humidity0.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Humidity0"
+
+  esper-humidity0:
+    image: localhost:5000/esper-humidity0
+    container_name: esper-humidity0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Humidity0"
+
+
+  sensor-senshumidity0:
+    image: localhost:5000/sensor-senshumidity0
+    container_name: sensor-senshumidity0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Humidity0"
+
+  actuator-acthumidity0:
+    image: localhost:5000/actuator-acthumidity0
+    container_name: actuator-acthumidity0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Humidity0"
+  #END Process Node Humidity0 environment configuration
+
+  #START Process Node Temperature1 environment configuration
+  temperature1:
+    image: localhost:5000/temperature1
+    container_name: temperature1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+  mosquitto-temperature1:
+    image: eclipse-mosquitto
+    container_name: mosquitto-temperature1
+    ports:
+      - "1885:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Temperature1.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+  esper-temperature1:
+    image: localhost:5000/esper-temperature1
+    container_name: esper-temperature1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+  mongo-temperature1:
+    image: mongo
+    container_name: mongo-temperature1
+    ports:
+      - "27019:27017"
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+#  api-temperature1:
+#    image: localhost:5000/api-temperature1
+#    container_name: api-temperature1
+#   ports:
+#      - "4002:4000"
+#    networks:
+#      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+  sensor-senstemperature1:
+    image: localhost:5000/sensor-senstemperature1
+    container_name: sensor-senstemperature1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+
+  actuator-acttemperature1:
+    image: localhost:5000/actuator-acttemperature1
+    container_name: actuator-acttemperature1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Temperature1"
+  #END Process Node Temperature1 environment configuration
+
+  #START Process Node WaterLevel2 environment configuration
+  waterlevel2:
+    image: localhost:5000/waterlevel2
+    container_name: waterlevel2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==WaterLevel2"
+
+  mosquitto-waterlevel2:
+    image: eclipse-mosquitto
+    container_name: mosquitto-waterlevel2
+    ports:
+      - "1886:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-WaterLevel2.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==WaterLevel2"
+
+  esper-waterlevel2:
+    image: localhost:5000/esper-waterlevel2
+    container_name: esper-waterlevel2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==WaterLevel2"
+
+
+  sensor-senswaterlevel2:
+    image: localhost:5000/sensor-senswaterlevel2
+    container_name: sensor-senswaterlevel2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==WaterLevel2"
+
+  actuator-actwaterlevel2:
+    image: localhost:5000/actuator-actwaterlevel2
+    container_name: actuator-actwaterlevel2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==WaterLevel2"
+  #END Process Node WaterLevel2 environment configuration
+
+
+  #START Node-RED configuration
+  #node-red:
+    #image: nodered/node-red:latest
+    #container_name: node-red
+    #ports:
+      #- "1880:1880"
+    #restart: unless-stopped
+    #networks:
+      #- simulateiot
+    #volumes:
+      #- node-red-data:/data
+    #environment:
+      #- TZ=Europe/Madrid
+  #END Node-RED configuration
+
+#volumes:
+  #node-red-data:
+
+networks:
+  simulateiot:
+    name: simulateiot
+    driver: overlay
+    attachable: true

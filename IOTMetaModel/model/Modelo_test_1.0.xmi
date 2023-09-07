@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iOTMetaModel:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iOTMetaModel="http://www.example.org/iOTMetaModel"
+    name="">
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogA"
+      suscribe_on_topic="//@node.0/@create_topic.0 //@node.0/@create_topic.1 //@node.0/@create_topic.2"
+      publish_on_topic="//@node.0/@create_topic.0 //@node.0/@create_topic.1 //@node.0/@create_topic.2"
+      edge_node="//@node.1 //@node.2">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Raspberry"
+        IP="158.49.245.143"/>
+    <create_topic
+        name="A1"
+        data="//@data.0"/>
+    <create_topic
+        name="A2"
+        data="//@data.0"/>
+    <create_topic
+        name="X"
+        data="//@data.0"/>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="SensA"
+      publish_on_topic="//@node.0/@create_topic.0 //@node.0/@create_topic.1 //@node.3/@create_topic.0"
+      data="//@data.1"
+      generation_speed="5.0">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Arduino"
+        IP="192.168.19.35">
+      <arduinoconfiguration>
+        <input
+            input="1"/>
+      </arduinoconfiguration>
+    </hil_node_configuration>
+  </node>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="ActA"
+      suscribe_on_topic="//@node.0/@create_topic.0 //@node.0/@create_topic.1 //@node.3/@create_topic.0"
+      data="//@data.0">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Arduino"
+        IP="192.168.19.73">
+      <arduinoconfiguration
+          deviceType="HighPowerLED"
+          output="0"/>
+    </hil_node_configuration>
+  </node>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogB"
+      suscribe_on_topic="//@node.3/@create_topic.0"
+      publish_on_topic="//@node.3/@create_topic.0"
+      edge_node="//@node.4 //@node.5">
+    <hil_node_configuration
+        xsi:type="iOTMetaModel:Raspberry"
+        IP="1.1.1.1"/>
+    <create_topic
+        name="B"
+        data="//@data.0"/>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="SensB"
+      publish_on_topic="//@node.3/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="ActB"
+      suscribe_on_topic="//@node.3/@create_topic.0"
+      data="//@data.0"/>
+  <data name="Data">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        GenerationName="alea">
+      <generationRange
+          Lower="0"
+          Upper="100"/>
+    </datasource>
+  </data>
+  <data name="Temperatura"
+      id="1">
+    <datasource
+        xsi:type="iOTMetaModel:CSVload"
+        FileName="temperature.csv"/>
+  </data>
+</iOTMetaModel:Environment>

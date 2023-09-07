@@ -1,0 +1,123 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.03109540102042603952.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-presence0:1884
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+Sep 06, 2023 7:48:30 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "0" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence
+FOG Presence_0 | Received data: Presence detected! |From topic: Presence
+FOG Presence_0 | Received data: { "value" : "1" } |From topic: Presence

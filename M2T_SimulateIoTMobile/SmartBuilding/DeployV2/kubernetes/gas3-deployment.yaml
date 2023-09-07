@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: gas3
+  name: gas3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: gas3
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: gas3
+    spec:
+      containers:
+        - image: raaulcs/tfg:gas3
+          name: gas3
+          resources: {}
+      restartPolicy: Always
+status: {}

@@ -1,0 +1,117 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Presence0-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-presence0:1884
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "0" } |From topic: Presence
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...
+ESPER Presence_EsperComponent | Received data: { "value" : "1" } |From topic: Presence
+ESPER | Publishing data: Presence detected! | To topic: Presence
+ESPER Presence_EsperComponent | Received data: Presence detected! |From topic: Presence
+PROBLEMs reconnectting to tcp://mosquitto-presence0:1884, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-presence0:1884
+Resubscribing to topics...

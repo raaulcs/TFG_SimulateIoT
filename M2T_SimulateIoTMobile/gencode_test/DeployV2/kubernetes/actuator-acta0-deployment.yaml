@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: actuator-acta0
+  name: actuator-acta0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: actuator-acta0
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: actuator-acta0
+    spec:
+      containers:
+        - image: raaulcs/tfg:actuator-acta0
+          name: actuator-acta0
+          resources: {}
+      restartPolicy: Always
+status: {}
+

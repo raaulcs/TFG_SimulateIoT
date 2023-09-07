@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: cep-waterlevel2
+  name: cep-waterlevel2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cep-waterlevel2
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: cep-waterlevel2
+    spec:
+      containers:
+        - image: raaulcs/tfg:esper-waterlevel2
+          name: cep-waterlevel2
+          resources: {}
+      restartPolicy: Always
+status: {}

@@ -1,0 +1,61 @@
+1694024039: mosquitto version 2.0.15 starting
+1694024039: Config loaded from /mosquitto/config/mosquitto.conf.
+1694024039: Opening ipv4 listen socket on port 1883.
+1694024039: Opening ipv6 listen socket on port 1883.
+1694024039: mosquitto version 2.0.15 running
+1694024132: New connection from 10.244.2.168:56920 on port 1883.
+1694024132: New client connected from 10.244.2.168:56920 as actPresence_0_9639465 (p2, c1, k30).
+1694024222: New connection from 10.244.2.174:47622 on port 1883.
+1694024222: New client connected from 10.244.2.174:47622 as Presence_EsperComponent (p2, c1, k30).
+1694024262: New connection from 10.244.2.177:32930 on port 1883.
+1694024262: New client connected from 10.244.2.177:32930 as Presence_0 (p2, c1, k30).
+1694024366: New connection from 10.244.2.181:48748 on port 1883.
+1694024366: New client connected from 10.244.2.181:48748 as sensPresence_0_3826263 (p2, c1, k30).
+1694024366: Client Presence_EsperComponent closed its connection.
+1694024369: New connection from 10.244.2.174:44372 on port 1883.
+1694024369: New client connected from 10.244.2.174:44372 as Presence_EsperComponent (p2, c1, k30).
+1694024375: Client Presence_EsperComponent closed its connection.
+1694024378: New connection from 10.244.2.174:34010 on port 1883.
+1694024378: New client connected from 10.244.2.174:34010 as Presence_EsperComponent (p2, c1, k30).
+1694024382: Client Presence_EsperComponent closed its connection.
+1694024384: New connection from 10.244.2.174:34022 on port 1883.
+1694024384: New client connected from 10.244.2.174:34022 as Presence_EsperComponent (p2, c1, k30).
+1694024387: Client Presence_EsperComponent closed its connection.
+1694024390: New connection from 10.244.2.174:55046 on port 1883.
+1694024390: New client connected from 10.244.2.174:55046 as Presence_EsperComponent (p2, c1, k30).
+1694024393: Client Presence_EsperComponent closed its connection.
+1694024396: New connection from 10.244.2.174:36530 on port 1883.
+1694024396: New client connected from 10.244.2.174:36530 as Presence_EsperComponent (p2, c1, k30).
+1694024399: Client Presence_EsperComponent closed its connection.
+1694024402: New connection from 10.244.2.174:36544 on port 1883.
+1694024402: New client connected from 10.244.2.174:36544 as Presence_EsperComponent (p2, c1, k30).
+1694024406: Client Presence_EsperComponent closed its connection.
+1694024408: New connection from 10.244.2.174:36966 on port 1883.
+1694024408: New client connected from 10.244.2.174:36966 as Presence_EsperComponent (p2, c1, k30).
+1694024413: Client Presence_EsperComponent closed its connection.
+1694024414: New connection from 10.244.2.174:36976 on port 1883.
+1694024414: New client connected from 10.244.2.174:36976 as Presence_EsperComponent (p2, c1, k30).
+1694024418: Client Presence_EsperComponent closed its connection.
+1694024420: New connection from 10.244.2.174:47212 on port 1883.
+1694024420: New client connected from 10.244.2.174:47212 as Presence_EsperComponent (p2, c1, k30).
+1694024427: Client Presence_EsperComponent closed its connection.
+1694024429: New connection from 10.244.2.174:52476 on port 1883.
+1694024429: New client connected from 10.244.2.174:52476 as Presence_EsperComponent (p2, c1, k30).
+1694024436: Client Presence_EsperComponent closed its connection.
+1694024438: New connection from 10.244.2.174:43990 on port 1883.
+1694024438: New client connected from 10.244.2.174:43990 as Presence_EsperComponent (p2, c1, k30).
+1694024444: Client Presence_EsperComponent closed its connection.
+1694024444: New connection from 10.244.2.174:44000 on port 1883.
+1694024444: New client connected from 10.244.2.174:44000 as Presence_EsperComponent (p2, c1, k30).
+1694024448: Client Presence_EsperComponent closed its connection.
+1694024450: New connection from 10.244.2.174:42936 on port 1883.
+1694024450: New client connected from 10.244.2.174:42936 as Presence_EsperComponent (p2, c1, k30).
+1694024454: Client Presence_EsperComponent closed its connection.
+1694024456: New connection from 10.244.2.174:45982 on port 1883.
+1694024456: New client connected from 10.244.2.174:45982 as Presence_EsperComponent (p2, c1, k30).
+1694024460: Client Presence_EsperComponent closed its connection.
+1694024462: New connection from 10.244.2.174:45990 on port 1883.
+1694024462: New client connected from 10.244.2.174:45990 as Presence_EsperComponent (p2, c1, k30).
+1694024466: Client Presence_EsperComponent closed its connection.
+1694024468: New connection from 10.244.2.174:43234 on port 1883.
+1694024468: New client connected from 10.244.2.174:43234 as Presence_EsperComponent (p2, c1, k30).

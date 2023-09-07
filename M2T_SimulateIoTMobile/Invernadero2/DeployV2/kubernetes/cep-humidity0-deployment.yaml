@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    io.kompose.service: cep-humidity0
+  name: cep-humidity0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cep-humidity0
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.network/simulateiot: "true"
+        io.kompose.service: cep-humidity0
+    spec:
+      containers:
+        - image: raaulcs/tfg:esper-humidity0
+          name: cep-humidity0
+          resources: {}
+      restartPolicy: Always
+status: {}

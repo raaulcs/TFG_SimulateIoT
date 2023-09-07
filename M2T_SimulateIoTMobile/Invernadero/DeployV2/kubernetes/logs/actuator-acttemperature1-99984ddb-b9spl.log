@@ -1,0 +1,26 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.015304854260256490953.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-temperature1:1885
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "43" } | Doing following action in consequence: actuando!
+Aug 22, 2023 6:04:46 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "24" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "45" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: Temperature has surpassed 25 degrees. | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "17" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "39" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "15" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "39" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "28" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: Temperature has surpassed 25 degrees. | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "32" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "38" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "50" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "48" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "41" } | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: Temperature has surpassed 25 degrees. | Doing following action in consequence: actuando!
+ACTUATORactTemperature_1_1989749 | Receive data: { "value" : "20" } | Doing following action in consequence: actuando!

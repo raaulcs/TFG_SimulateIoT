@@ -1,0 +1,13 @@
+1694103541: mosquitto version 2.0.15 starting
+1694103541: Config loaded from /mosquitto/config/mosquitto.conf.
+1694103541: Opening ipv4 listen socket on port 1883.
+1694103541: Opening ipv6 listen socket on port 1883.
+1694103541: mosquitto version 2.0.15 running
+1694103549: New connection from 10.244.3.22:37156 on port 1883.
+1694103549: New client connected from 10.244.3.22:37156 as Temperature_EsperComponent (p2, c1, k30).
+1694103551: New connection from 10.244.3.19:49042 on port 1883.
+1694103552: New client connected from 10.244.3.19:49042 as actTemperature_1_9076099 (p2, c1, k30).
+1694103560: New connection from 10.244.3.30:47252 on port 1883.
+1694103560: New connection from 10.244.3.28:48874 on port 1883.
+1694103560: New client connected from 10.244.3.30:47252 as Temperature_1 (p2, c1, k30).
+1694103561: New client connected from 10.244.3.28:48874 as sensTemperature_1_2446833 (p2, c1, k30).

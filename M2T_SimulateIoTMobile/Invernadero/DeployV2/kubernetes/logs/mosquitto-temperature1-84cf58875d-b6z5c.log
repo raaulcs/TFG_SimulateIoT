@@ -1,0 +1,35 @@
+1692727453: mosquitto version 2.0.15 starting
+1692727453: Config loaded from /mosquitto/config/mosquitto.conf.
+1692727453: Opening ipv4 listen socket on port 1883.
+1692727453: Opening ipv6 listen socket on port 1883.
+1692727453: mosquitto version 2.0.15 running
+1692727456: New connection from 10.103.1.69:52486 on port 1883.
+1692727456: New client connected from 10.103.1.69:52486 as sensTemperature_1_3219559 (p2, c1, k30).
+1692727457: New connection from 10.103.0.71:57790 on port 1883.
+1692727457: New client connected from 10.103.0.71:57790 as Temperature_EsperComponent (p2, c1, k30).
+1692727464: Client Temperature_EsperComponent closed its connection.
+1692727466: New connection from 10.103.0.71:38258 on port 1883.
+1692727466: New client connected from 10.103.0.71:38258 as Temperature_EsperComponent (p2, c1, k30).
+1692727468: New connection from 10.103.1.72:36430 on port 1883.
+1692727468: New client connected from 10.103.1.72:36430 as Temperature_1 (p1, c1, k30).
+1692727469: Client Temperature_EsperComponent closed its connection.
+1692727472: New connection from 10.103.0.71:38274 on port 1883.
+1692727472: New client connected from 10.103.0.71:38274 as Temperature_EsperComponent (p2, c1, k30).
+1692727475: Client Temperature_EsperComponent closed its connection.
+1692727478: New connection from 10.103.0.71:58456 on port 1883.
+1692727478: New client connected from 10.103.0.71:58456 as Temperature_EsperComponent (p2, c1, k30).
+1692727481: Client Temperature_EsperComponent closed its connection.
+1692727484: New connection from 10.103.0.71:58460 on port 1883.
+1692727484: New client connected from 10.103.0.71:58460 as Temperature_EsperComponent (p2, c1, k30).
+1692727486: New connection from 10.103.0.30:46890 on port 1883.
+1692727486: New client connected from 10.103.0.30:46890 as actTemperature_1_1989749 (p2, c1, k30).
+1692727488: Client Temperature_EsperComponent closed its connection.
+1692727490: New connection from 10.103.0.71:53830 on port 1883.
+1692727490: New client connected from 10.103.0.71:53830 as Temperature_EsperComponent (p2, c1, k30).
+1692727493: Client Temperature_EsperComponent closed its connection.
+1692727496: New connection from 10.103.0.71:53764 on port 1883.
+1692727496: New client connected from 10.103.0.71:53764 as Temperature_EsperComponent (p2, c1, k30).
+1692727499: Client Temperature_EsperComponent closed its connection.
+1692727502: New connection from 10.103.0.71:53778 on port 1883.
+1692727502: New client connected from 10.103.0.71:53778 as Temperature_EsperComponent (p2, c1, k30).
+1692727505: Client Temperature_EsperComponent closed its connection.

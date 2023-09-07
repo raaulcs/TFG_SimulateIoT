@@ -1,0 +1,103 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/WaterLevel2-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "326" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "482" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "174" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "138" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "281" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "450" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "99" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "402" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "449" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "31" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "87" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "109" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "416" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "118" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "309" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "242" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "302" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "288" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "80" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "469" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "117" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "174" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "173" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "437" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "26" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "16" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "222" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "428" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "0" } |From topic: WaterLevel
+ESPER | Publishing data: The water level in the tank is below 10 liters. | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "217" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "331" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "271" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "191" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "284" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "440" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "27" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "260" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "375" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "7" } |From topic: WaterLevel
+ESPER | Publishing data: The water level in the tank is below 10 liters. | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "113" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "480" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "1" } |From topic: WaterLevel
+ESPER | Publishing data: The water level in the tank is below 10 liters. | To topic: Humidity
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "101" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "202" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "334" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "438" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "204" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "244" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "363" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "406" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "471" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "312" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "412" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "466" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "420" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "157" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "415" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "149" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "93" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "74" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "137" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "420" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "153" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "388" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "52" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "275" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "336" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "155" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "299" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "372" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "101" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "90" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "462" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "409" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "445" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "224" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "384" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "418" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "109" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "221" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "16" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "362" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "461" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "265" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "190" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "452" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "448" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "475" } |From topic: WaterLevel
+ESPER WaterLevel_EsperComponent | Received data: { "value" : "6" } |From topic: WaterLevel
+ESPER | Publishing data: The water level in the tank is below 10 liters. | To topic: Humidity

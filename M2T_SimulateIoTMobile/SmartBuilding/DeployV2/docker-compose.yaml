@@ -1,0 +1,218 @@
+version: "3"
+services:
+  #START Process Node Presence0 environment configuration
+  presence0:
+    image: localhost:5000/presence0
+    container_name: presence0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Presence0"
+
+  mosquitto-presence0:
+    image: eclipse-mosquitto
+    container_name: mosquitto-presence0
+    ports:
+      - "1884:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Presence0.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Presence0"
+
+  esper-presence0:
+    image: localhost:5000/esper-presence0
+    container_name: esper-presence0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Presence0"
+
+
+  sensor-senspresence0:
+    image: localhost:5000/sensor-senspresence0
+    container_name: sensor-senspresence0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Presence0"
+
+  actuator-actpresence0:
+    image: localhost:5000/actuator-actpresence0
+    container_name: actuator-actpresence0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Presence0"
+  #END Process Node Presence0 environment configuration
+
+  #START Process Node Brightness1 environment configuration
+  brightness1:
+    image: localhost:5000/brightness1
+    container_name: brightness1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Brightness1"
+
+  mosquitto-brightness1:
+    image: eclipse-mosquitto
+    container_name: mosquitto-brightness1
+    ports:
+      - "1885:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Brightness1.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Brightness1"
+
+  esper-brightness1:
+    image: localhost:5000/esper-brightness1
+    container_name: esper-brightness1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Brightness1"
+
+
+  sensor-sensbrightness1:
+    image: localhost:5000/sensor-sensbrightness1
+    container_name: sensor-sensbrightness1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Brightness1"
+
+  actuator-actbrightness1:
+    image: localhost:5000/actuator-actbrightness1
+    container_name: actuator-actbrightness1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Brightness1"
+  #END Process Node Brightness1 environment configuration
+
+  #START Process Node Water2 environment configuration
+  water2:
+    image: localhost:5000/water2
+    container_name: water2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Water2"
+
+  mosquitto-water2:
+    image: eclipse-mosquitto
+    container_name: mosquitto-water2
+    ports:
+      - "1886:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Water2.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Water2"
+
+  esper-water2:
+    image: localhost:5000/esper-water2
+    container_name: esper-water2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Water2"
+
+
+  sensor-senswater2:
+    image: localhost:5000/sensor-senswater2
+    container_name: sensor-senswater2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Water2"
+
+  actuator-actwater2:
+    image: localhost:5000/actuator-actwater2
+    container_name: actuator-actwater2
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Water2"
+  #END Process Node Water2 environment configuration
+
+  #START Process Node Gas3 environment configuration
+  gas3:
+    image: localhost:5000/gas3
+    container_name: gas3
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Gas3"
+
+  mosquitto-gas3:
+    image: eclipse-mosquitto
+    container_name: mosquitto-gas3
+    ports:
+      - "1887:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-Gas3.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Gas3"
+
+  esper-gas3:
+    image: localhost:5000/esper-gas3
+    container_name: esper-gas3
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Gas3"
+
+
+  sensor-sensgas3:
+    image: localhost:5000/sensor-sensgas3
+    container_name: sensor-sensgas3
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Gas3"
+
+  actuator-actgas3:
+    image: localhost:5000/actuator-actgas3
+    container_name: actuator-actgas3
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==Gas3"
+  #END Process Node Gas3 environment configuration
+
+
+  #START Node-RED configuration
+  #node-red:
+    #image: nodered/node-red:latest
+    #container_name: node-red
+    #ports:
+      #- "1880:1880"
+    #restart: unless-stopped
+    #networks:
+      #- simulateiot
+    #volumes:
+      #- node-red-data:/data
+    #environment:
+      #- TZ=Europe/Madrid
+  #END Node-RED configuration
+
+#volumes:
+  #node-red-data:
+
+networks:
+  simulateiot:
+    name: simulateiot
+    driver: overlay
+    attachable: true

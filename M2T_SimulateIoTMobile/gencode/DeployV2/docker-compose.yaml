@@ -1,0 +1,132 @@
+version: "3"
+services:
+  #START Process Node fogA0 environment configuration
+  foga0:
+    image: localhost:5000/foga0
+    container_name: foga0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  mosquitto-foga0:
+    image: eclipse-mosquitto
+    container_name: mosquitto-foga0
+    ports:
+      - "1884:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-fogA0.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+
+  mongo-foga0:
+    image: mongo
+    container_name: mongo-foga0
+    ports:
+      - "27018:27017"
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  sensor-sensa0:
+    image: localhost:5000/sensor-sensa0
+    container_name: sensor-sensa0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  actuator-acta0:
+    image: localhost:5000/actuator-acta0
+    container_name: actuator-acta0
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogA0"
+
+  #START Process Node fogB1 environment configuration
+  fogb1:
+    image: localhost:5000/fogb1
+    container_name: fogb1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+
+  mosquitto-fogb1:
+    image: eclipse-mosquitto
+    container_name: mosquitto-fogb1
+    ports:
+      - "1885:1883"
+    restart: always
+    volumes:
+      - ./mosquitto-fogB1.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+
+  esper-fogb1:
+    image: localhost:5000/esper-fogb1
+    container_name: esper-fogb1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+
+  mongo-fogb1:
+    image: mongo
+    container_name: mongo-fogb1
+    ports:
+      - "27019:27017"
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+
+  sensor-sensb1:
+    image: localhost:5000/sensor-sensb1
+    container_name: sensor-sensb1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+
+  actuator-actb1:
+    image: localhost:5000/actuator-actb1
+    container_name: actuator-actb1
+    networks:
+      - simulateiot
+    #environment:
+      #- "constraint:node==fogB1"
+  #END Process Node fogB1 environment configuration
+
+
+  #START Node-RED configuration
+  #node-red:
+    #image: nodered/node-red:latest
+    #container_name: node-red
+    #ports:
+      #- "1880:1880"
+    #restart: unless-stopped
+    #networks:
+      #- simulateiot
+    #volumes:
+      #- node-red-data:/data
+    #environment:
+      #- TZ=Europe/Madrid
+  #END Node-RED configuration
+
+#volumes:
+  #node-red-data:
+
+networks:
+  simulateiot:
+    name: simulateiot
+    driver: overlay
+    attachable: true

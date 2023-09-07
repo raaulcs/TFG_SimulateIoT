@@ -1,0 +1,29 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.09804077536707647364.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Connected to tcp://mosquitto-waterlevel2:1886
+FOG WaterLevel_2 | Received data: { "value" : "212" } |From topic: WaterLevel
+Sep 07, 2023 4:24:34 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+FOG WaterLevel_2 | Received data: { "value" : "237" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "106" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "93" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "248" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "100" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "4" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "176" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "181" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "136" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "59" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "173" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "3" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "197" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "111" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "46" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "214" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "52" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "118" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "100" } |From topic: WaterLevel
+FOG WaterLevel_2 | Received data: { "value" : "71" } |From topic: WaterLevel

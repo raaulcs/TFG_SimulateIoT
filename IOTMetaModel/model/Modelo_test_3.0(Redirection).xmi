@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iOTMetaModel:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iOTMetaModel="http://www.example.org/iOTMetaModel"
+    name="">
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogA"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      publish_on_topic="//@node.0/@create_topic.0"
+      redirectionTime="20"
+      edge_node="//@node.1 //@node.2"
+      redirect="//@node.3 //@node.6">
+    <create_topic
+        name="A"
+        data="//@data.0"/>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="SensA"
+      publish_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="ActA"
+      suscribe_on_topic="//@node.0/@create_topic.0"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogB"
+      id="1"
+      edge_node="//@node.4 //@node.5">
+    <create_topic
+        name="TopicB"
+        data="//@data.0"/>
+    <create_topic
+        name="TopicC"
+        data="//@data.0"/>
+    <component
+        xsi:type="iOTMetaModel:CEP"
+        name="CepFogB"
+        id="1">
+      <rule
+          apply_to="//@node.3/@create_topic.0"
+          eventType="EventTopicBFogB"
+          rule="select value from EsperClient.EventTopicBFogB where value &lt; 90">
+        <generates_notification
+            xsi:type="iOTMetaModel:TopicNotification"
+            name="RuleTopicBFogB"
+            message="rule meet"
+            publish_on_topic="//@node.3/@create_topic.1"/>
+      </rule>
+    </component>
+  </node>
+  <node xsi:type="iOTMetaModel:Sensor"
+      name="SensB"
+      id="1"
+      publish_on_topic="//@node.3/@create_topic.0"
+      data="//@data.0"
+      generation_speed="2.0"/>
+  <node xsi:type="iOTMetaModel:Actuator"
+      name="ActB"
+      id="1"
+      suscribe_on_topic="//@node.3/@create_topic.1"
+      data="//@data.0"/>
+  <node xsi:type="iOTMetaModel:FogNode"
+      name="fogC"
+      id="2">
+    <create_topic
+        name="D"
+        data="//@data.0"/>
+  </node>
+  <data name="Data">
+    <datasource
+        xsi:type="iOTMetaModel:Aleatory"
+        GenerationName="alea">
+      <generationRange
+          Lower="0"
+          Upper="100"/>
+    </datasource>
+  </data>
+</iOTMetaModel:Environment>

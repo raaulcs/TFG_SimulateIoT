@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="iOTMetaModel" nsURI="http://www.example.org/iOTMetaModel" nsPrefix="iOTMetaModel">
+  <eAnnotations source="gmf"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Environment">
+    <eAnnotations source="gmf.diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="simulationSpeed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloatObject"
+        defaultValueLiteral="1.0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfMessages" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="100"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="node" upperBound="-1" eType="#//Node"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" upperBound="-1" eType="#//Data"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="route" upperBound="-1"
+        eType="#//Route" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitysystem" upperBound="-1"
+        eType="#//SecuritySystem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coordinates" eType="#//Coordinates"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="suscribe_on_topic" upperBound="-1"
+        eType="#//Topic">
+      <eAnnotations source="gmf.link">
+        <details key="source.decoration" value="arrow"/>
+        <details key="target.decoration" value="none"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="255,93,0"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publish_on_topic" upperBound="-1"
+        eType="#//Topic">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="255,93,0"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hil_node_configuration"
+        eType="#//HIL_Node" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EdgeNode" abstract="true" eSuperTypes="#//Node">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalconfiguration"
+        eType="#//AdditionalConfiguration" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="#//Data">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="51,51,204"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CoverageSignalGain" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IntermediateBufferSize"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BatteryManagement" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessNode" abstract="true" eSuperTypes="#//Node">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="edge_node" upperBound="-1"
+        eType="#//EdgeNode">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="0,102,0"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="redirect" upperBound="-1"
+        eType="#//ProcessNode">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="color" value="255,0,236"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="redirectionTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="create_topic" upperBound="-1"
+        eType="#//Topic" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="#//Size" defaultValueLiteral="XS"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
+        eType="#//Component" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BrokerType" eType="#//BrokerType"
+        defaultValueLiteral="Mosquitto"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CovergaSignalPower" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jitterControl" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensor" eSuperTypes="#//EdgeNode">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="226,150,152"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/device.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/device.png"/>
+      <details key="label.placement" value="internal"/>
+      <details key="label.icon" value="true"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="generation_speed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloatObject"
+        defaultValueLiteral="1.0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actuator" eSuperTypes="#//EdgeNode">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="226,150,152"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="label.placement" value="internal"/>
+      <details key="tool.small.path" value="imagenes/Actuator.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/Actuator.png"/>
+      <details key="label.icon" value="true"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Size">
+    <eLiterals name="XS"/>
+    <eLiterals name="S" value="1"/>
+    <eLiterals name="M" value="2"/>
+    <eLiterals name="L" value="3"/>
+    <eLiterals name="XL" value="4"/>
+    <eLiterals name="XXL" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BrokerType">
+    <eLiterals name="Mosquitto"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FogNode" eSuperTypes="#//ProcessNode">
+    <eAnnotations source="gmf.node">
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="color" value="203,225,249"/>
+      <details key="tool.small.path" value="imagenes/fog.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/fog.png"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CloudNode" eSuperTypes="#//ProcessNode">
+    <eAnnotations source="gmf.node">
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="color" value="191,248,203"/>
+      <details key="tool.small.path" value="imagenes/cloud.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/cloud.png"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CloudType" eType="#//CloudType"
+        defaultValueLiteral="AWS"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CloudType">
+    <eLiterals name="AWS"/>
+    <eLiterals name="Azure" value="1"/>
+    <eLiterals name="Heroku" value="2"/>
+    <eLiterals name="OpenShift" value="3"/>
+    <eLiterals name="Undefined" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AdditionalConfiguration">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="id"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/machineLearning.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/machine_learning.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/machine_learning.png"/>
+      <details key="label.placement" value="external"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Coordinates">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/xy.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/xy.png"/>
+      <details key="label.icon" value="true"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="latitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="longitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="color" value="226,150,152"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/data.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/data.png"/>
+      <details key="label.placement" value="internal"/>
+      <details key="label.icon" value="true"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DataType" eType="#//DataType"
+        defaultValueLiteral="INTEGER"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datasource" lowerBound="1"
+        eType="#//DataSource" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataType">
+    <eLiterals name="INTEGER"/>
+    <eLiterals name="STRING" value="1"/>
+    <eLiterals name="BOOLEAN" value="2"/>
+    <eLiterals name="FLOAT" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Topic">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/topic.svg"/>
+      <details key="label.placement" value="external"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/topic.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/topic.png"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="#//Data"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="label.icon" value="true"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataBase" abstract="true" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DataBaseProvider" eType="#//DataBaseProvider"
+        defaultValueLiteral="MongoDB"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessEngine" abstract="true" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ProcessEngineProvider"
+        eType="#//ProcessEngineProvider" defaultValueLiteral="EsperTech"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rule" upperBound="-1" eType="#//Rule"
+        containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataBaseProvider">
+    <eLiterals name="MongoDB"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProcessEngineProvider">
+    <eLiterals name="EsperTech"/>
+    <eLiterals name="WSO2" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SP" eSuperTypes="#//ProcessEngine">
+    <eAnnotations source="gmf.node">
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/wso2.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/wso2.png"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CEP" eSuperTypes="#//ProcessEngine">
+    <eAnnotations source="gmf.node">
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="color" value="191,248,203"/>
+      <details key="tool.small.path" value="imagenes/esper.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/esper.png"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NoSQL" eSuperTypes="#//DataBase">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/mongo.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/mongo.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/mongo.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="eventType"/>
+      <details key="color" value="191,248,203"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/rule.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/rule.png"/>
+      <details key="label.placement" value="internal"/>
+      <details key="label.icon" value="true"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="apply_to" lowerBound="1"
+        eType="#//Topic">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="46,204,113"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rule" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generates_notification"
+        eType="#//Notification" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Notification" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="color" value="191,248,203"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/notification.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/notification.png"/>
+      <details key="label.placement" value="external"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="route" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EmailNotification" eSuperTypes="#//Notification">
+    <eAnnotations source="gmf.node">
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="color" value="191,248,203"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/gmail.svg"/>
+      <details key="tool.small.path" value="imagenes/gmail.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/gmail.png"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinyNotification" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="username" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SMTPserver" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="password" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TopicNotification" eSuperTypes="#//Notification">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="color" value="191,248,203"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/notification.svg"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publish_on_topic" upperBound="-1"
+        eType="#//Topic">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="255,93,0"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RedirectionConfiguration" eSuperTypes="#//AdditionalConfiguration">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/redirect.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/redirect.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/redirect.png"/>
+      <details key="label.placement" value="external"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="route_processnode" lowerBound="1"
+        upperBound="-1" eType="#//ProcessNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="topic" lowerBound="1" eType="#//Topic">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="style" value="dash"/>
+        <details key="color" value="255,93,0"/>
+        <details key="width" value="3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSource" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label.placement" value="internal"/>
+      <details key="label.icon" value="true"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LoadFromFile" abstract="true" eSuperTypes="#//DataSource">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="FileName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FileName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataGeneration" abstract="true" eSuperTypes="#//DataSource">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="GenerationName"/>
+      <details key="label.icon" value="true"/>
+      <details key="label.placement" value="internal"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GenerationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generationRange" eType="#//GenerationRange"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenerationRange">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="id"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/range.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/range.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/range.png"/>
+      <details key="label.placement" value="external"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Lower" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Upper" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aleatory" eSuperTypes="#//DataGeneration">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="226,150,152"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/random.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/random.png"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CSVload" eSuperTypes="#//LoadFromFile">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="color" value="226,150,152"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/csv.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/csv.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/csv.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HIL_Node" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Arduino" eSuperTypes="#//HIL_Node">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="IP"/>
+      <details key="figure" value="svg"/>
+      <details key="color" value="226,150,152"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/arduino.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/arduino.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/arduino.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="arduinoModel" eType="#//ArduinoModel"
+        defaultValueLiteral="Yun"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arduinoconfiguration" lowerBound="1"
+        upperBound="-1" eType="#//ArduinoConfiguration" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="collapsible" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Raspberry" eSuperTypes="#//HIL_Node">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="IP"/>
+      <details key="figure" value="svg"/>
+      <details key="color" value="226,150,152"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/raspberry.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/raspberry.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/raspberry.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UserDevice" eSuperTypes="#//HIL_Node">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="IP"/>
+      <details key="figure" value="svg"/>
+      <details key="color" value="226,150,152"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/userDevice.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/userDevice.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/userDevice.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArduinoModel">
+    <eLiterals name="AdafruitCircuitPlayground"/>
+    <eLiterals name="BT" value="1"/>
+    <eLiterals name="DuemilanoveOrDiecimila" value="2"/>
+    <eLiterals name="Esplora" value="3"/>
+    <eLiterals name="Ethernet" value="4"/>
+    <eLiterals name="Fio" value="5"/>
+    <eLiterals name="Gemma" value="6"/>
+    <eLiterals name="Industrial101" value="7"/>
+    <eLiterals name="Leonardo" value="8"/>
+    <eLiterals name="LeonardoETH" value="9"/>
+    <eLiterals name="MegaADK" value="10"/>
+    <eLiterals name="MegaOrMega2560" value="11"/>
+    <eLiterals name="Micro" value="12"/>
+    <eLiterals name="Mini" value="13"/>
+    <eLiterals name="NGOrOlder" value="14"/>
+    <eLiterals name="Nano" value="15"/>
+    <eLiterals name="ProOrProMini" value="16"/>
+    <eLiterals name="RobotControl" value="17"/>
+    <eLiterals name="RobotMotor" value="18"/>
+    <eLiterals name="Uno" value="19"/>
+    <eLiterals name="UnoMini" value="20"/>
+    <eLiterals name="UnoWiFi" value="21"/>
+    <eLiterals name="Yun" value="22"/>
+    <eLiterals name="YunMini" value="23"/>
+    <eLiterals name="LilyPadArduino" value="24"/>
+    <eLiterals name="LilyPadArduinoUSB" value="25"/>
+    <eLiterals name="LininoOne" value="26"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArduinoDeviceType">
+    <eLiterals name="Thermistor"/>
+    <eLiterals name="RotatoryPotentiometer" value="1"/>
+    <eLiterals name="TiltSensor" value="2"/>
+    <eLiterals name="Photoresistor" value="3"/>
+    <eLiterals name="Accelerometer" value="4"/>
+    <eLiterals name="PushbuttonModule" value="5"/>
+    <eLiterals name="LinearPotentiometer" value="6"/>
+    <eLiterals name="TouchSensor" value="7"/>
+    <eLiterals name="JoystickModule" value="8"/>
+    <eLiterals name="Gyroscope" value="9"/>
+    <eLiterals name="HallSensor" value="10"/>
+    <eLiterals name="LED" value="11"/>
+    <eLiterals name="HighPowerLED" value="12"/>
+    <eLiterals name="Mosfet" value="13"/>
+    <eLiterals name="Relay" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArduinoConfiguration">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="deviceType"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/arduino.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/arduino.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/arduino.png"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deviceType" eType="#//ArduinoDeviceType"
+        defaultValueLiteral="Thermistor"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="output" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" upperBound="-1"
+        eType="#//Input" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Input">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="input"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/IOTMetaModel/imagenes/telegram.svg"/>
+      <details key="tool.small.bundle" value="IOTMetaModel"/>
+      <details key="tool.small.path" value="imagenes/telegram.png"/>
+      <details key="tool.large.bundle" value="IOTMetaModel"/>
+      <details key="tool.large.path" value="imagenes/telegram.png"/>
+      <details key="label.placement" value="external"/>
+      <details key="label.icon" value="false"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="input" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Route" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FogCloudRoute" eSuperTypes="#//Route"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RandomRoute" eSuperTypes="#//Route"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CSV_Route" eSuperTypes="#//Route"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinearRoute" eSuperTypes="#//Route">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coordinates" upperBound="-1"
+        eType="#//Coordinates" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecuritySystem" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tokensecuritysystem" upperBound="-1"
+        eType="#//TokenSecuritySystem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TokenSecuritySystem"/>
+</ecore:EPackage>

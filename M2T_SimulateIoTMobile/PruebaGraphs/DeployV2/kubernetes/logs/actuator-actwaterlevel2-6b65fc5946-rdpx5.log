@@ -1,0 +1,78 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (jar:file:/tmp/thorntailorg.eclipse.paho.client.mqttv3-1.2.014898513348493267122.jar!/) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-waterlevel2:1886, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-waterlevel2:1886
+Sep 07, 2023 4:21:27 PM jdk.internal.reflect.NativeMethodAccessorImpl invoke0
+INFO: THORN99999: Thorntail is Ready
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "47" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "19" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "52" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "233" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "25" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "43" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "157" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "194" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "149" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "187" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "98" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "9" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "210" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "27" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "232" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "230" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "8" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "225" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "202" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "199" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "30" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "24" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "165" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "206" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "74" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "105" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "7" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "192" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "140" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "20" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "145" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "116" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "173" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "166" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "222" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "140" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "203" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "26" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "166" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "150" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "115" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "211" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "57" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "141" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "232" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "244" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "53" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "124" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "63" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "38" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "132" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "82" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "90" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "16" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "48" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "159" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "203" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "204" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "97" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "5" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "156" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "240" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "219" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "134" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "244" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "10" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "106" } | Doing following action in consequence: actuando!
+ACTUATORactWaterLevel_2_9812450 | Receive data: { "value" : "170" } | Doing following action in consequence: actuando!

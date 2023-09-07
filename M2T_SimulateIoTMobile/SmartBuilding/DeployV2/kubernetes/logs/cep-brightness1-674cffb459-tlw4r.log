@@ -1,0 +1,116 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.paho.client.mqttv3.internal.FileLock (file:/Brightness1-1.0-SNAPSHOT-jar-with-dependencies.jar) to method sun.nio.ch.FileLockImpl.release()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.paho.client.mqttv3.internal.FileLock
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+PROBLEMs connectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next connection attempt
+PROBLEMs connectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next connection attempt
+Connected to tcp://mosquitto-brightness1:1885
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Esper running...
+ESPER Brightness_EsperComponent | Received data: { "value" : "83" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "42" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "9" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "32" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "42" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "52" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "77" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "39" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "73" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "91" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "64" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "100" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "74" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "12" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "69" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "12" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "25" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "18" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "52" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "77" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "14" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "21" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "44" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
+ESPER Brightness_EsperComponent | Received data: { "value" : "88" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "92" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "95" } |From topic: Brightness
+ESPER Brightness_EsperComponent | Received data: { "value" : "50" } |From topic: Brightness
+ESPER | Publishing data: The brightness is lower than 60%, lights on! | To topic: Brightness
+ESPER Brightness_EsperComponent | Received data: The brightness is lower than 60%, lights on! |From topic: Brightness
+PROBLEMs reconnectting to tcp://mosquitto-brightness1:1885, waiting 3 seconds for the next reconnection attempt
+Client reconnected to: tcp://mosquitto-brightness1:1885
+Resubscribing to topics...
